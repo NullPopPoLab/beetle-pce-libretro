@@ -1510,7 +1510,7 @@ static void update_input(void)
          joy_bits[j] = input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_MASK);
       else
 	  {
-         for (i = 0; i < (RETRO_DEVICE_ID_JOYPAD_MODE+1); i++)
+         for (i = 0; i < (RETRO_DEVICE_ID_JOYPAD_MENU+1); i++)
             joy_bits[j] |= input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, i) ? (1 << i) : 0;
       }
    }
