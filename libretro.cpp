@@ -1011,17 +1011,17 @@ static void check_variables(bool loaded)
       if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
       {
          if (strcmp(var.value, "System Card 3") == 0)
-            setting_pce_cdbios = "syscard3.pce";
+            setting_pce_cdbios = "pcengine/syscard3.pce";
          else if (strcmp(var.value, "System Card 2") == 0)
-            setting_pce_cdbios = "syscard2.pce";
+            setting_pce_cdbios = "pcengine/syscard2.pce";
          else if (strcmp(var.value, "System Card 1") == 0)
-            setting_pce_cdbios = "syscard1.pce";
+            setting_pce_cdbios = "pcengine/syscard1.pce";
          else if (strcmp(var.value, "Games Express") == 0)
-            setting_pce_cdbios = "gexpress.pce";
+            setting_pce_cdbios = "pcengine/gexpress.pce";
          else if (strcmp(var.value, "System Card 3 US") == 0)
-            setting_pce_cdbios = "syscard3u.pce";
+            setting_pce_cdbios = "pcengine/syscard3u.pce";
          else if (strcmp(var.value, "System Card 2 US") == 0)
-            setting_pce_cdbios = "syscard2u.pce";
+            setting_pce_cdbios = "pcengine/syscard2u.pce";
       }
 
       var.key = "pce_arcadecard";
