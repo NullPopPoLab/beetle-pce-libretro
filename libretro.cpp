@@ -660,7 +660,7 @@ bool get_eject_state(void)
 
 unsigned get_image_index(void)
 {
-   return PCE_GetCDIndex();
+   return get_image_index;
 }
 
 bool set_image_index(unsigned index)
