@@ -52,6 +52,10 @@ static int aspect_ratio = 0;
 static unsigned video_width = 0;
 static unsigned video_height = 0;
 
+static unsigned disk_index = 0;
+static std:vector<std::string> disk_label;
+struct retro_disk_control_ext_callback dskcb;
+
 /* Composite palette 2020/09/14
  * authors: Dshadoff, Turboxray, Furrtek, Kitrinx and others
  */
@@ -610,8 +614,10 @@ static void ReadM3U(std::vector<std::string> &file_list, std::string path, unsig
 
          ReadM3U(file_list, efp, depth++);
       }
-      else
+      else{
+		disk_label.push_back(std::string(linebuf));
          file_list.push_back(efp);
+      }
    }
 
 end:
@@ -620,6 +626,60 @@ end:
 
 static std::vector<CDIF *> CDInterfaces;   // FIXME: Cleanup on error out.
 // TODO: LoadCommon()
+
+bool set_eject_state(bool ejected)
+{
+	if(ejected)return PCE_EjectCD();
+	else return PCE_SwapCD(disk_index);
+}
+
+bool get_eject_state(void)
+{
+   return PCE_IsTrayOpen();
+}
+
+unsigned get_image_index(void)
+{
+   return PCE_GetCDIndex();
+}
+
+bool set_image_index(unsigned index)
+{
+	if (index >= CDInterfaces.size()) return false;
+	disk_index = index;
+	return true;
+}
+
+unsigned get_num_images(void)
+{
+   return CDInterfaces.size();
+}
+
+static bool disk_get_image_label(unsigned index, char *label, size_t len)
+{
+   if (len < 1) return false;
+   if (index >= CDInterfaces.size()) return false;
+
+	strncpy(label, disk_label[index].c_str(), len);
+	return true;
+}
+
+static void attach_disk_swap_interface(void)
+{
+   /* these functions are unused */
+   dskcb.set_eject_state = set_eject_state;
+   dskcb.get_eject_state = get_eject_state;
+   dskcb.set_image_index = set_image_index;
+   dskcb.get_image_index = get_image_index;
+   dskcb.get_num_images  = get_num_images;
+   dskcb.add_image_index = NULL;
+   dskcb.replace_image_index = NULL;
+   dskcb.set_initial_image = NULL;
+   dskcb.get_image_path = NULL;
+   dskcb.get_image_label = disk_get_image_label;
+
+   environ_cb(RETRO_ENVIRONMENT_SET_DISK_CONTROL_EXT_INTERFACE, &dskcb);
+}
 
 static bool MDFNI_LoadCD(const char *path, const char *ext)
 {
@@ -699,6 +759,7 @@ static bool MDFNI_LoadCD(const char *path, const char *ext)
 
       return false;
    }
+	else attach_disk_swap_interface();
 
    //MDFNI_SetLayerEnableMask(~0ULL);
 

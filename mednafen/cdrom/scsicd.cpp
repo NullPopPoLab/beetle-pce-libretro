@@ -38,6 +38,8 @@ static int WhichSystem;
 static CDIF *Cur_CDIF;
 static bool TrayOpen;
 
+bool SCSICD_IsTrayOpen(){return TrayOpen;}
+
 // Internal operation to the SCSI CD unit.  Only pass 1 or 0 to these macros!
 #define SetIOP(mask, set)	{ cd_bus.signals &= ~mask; if(set) cd_bus.signals |= mask; }
 

@@ -95,5 +95,6 @@ void SCSICD_SetCDDAVolume(double left, double right);
 int SCSICD_StateAction(StateMem *sm, const unsigned load, const bool data_only, const char *sname);
 
 void SCSICD_SetDisc(bool tray_open, CDIF *cdif, bool no_emu_side_effects = false);
+bool SCSICD_IsTrayOpen();
 
 #endif
