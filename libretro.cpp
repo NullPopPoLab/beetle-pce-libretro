@@ -73,7 +73,7 @@ static bool failed_init = false;
 std::string retro_base_directory;
 
 static unsigned disk_index = 0;
-static std:vector<std::string> disk_label;
+static std::vector<std::string> disk_label;
 struct retro_disk_control_ext_callback dskcb;
 
 /* Composite palette 2020/09/14
