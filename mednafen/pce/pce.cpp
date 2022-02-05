@@ -548,7 +548,7 @@ MDFN_COLD bool PCE_SwapCD(unsigned idx){
 	SCSICD_SetDisc(false, (*cdifs)[idx], true);
 	DiscIdx=idx;
 
-	retuyrn true;
+	return true;
 }
 
 static MDFN_COLD void Cleanup(void)
