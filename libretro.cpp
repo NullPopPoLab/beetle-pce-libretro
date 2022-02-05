@@ -52,6 +52,26 @@ static int aspect_ratio = 0;
 static unsigned video_width = 0;
 static unsigned video_height = 0;
 
+struct retro_perf_callback perf_cb;
+retro_get_cpu_features_t perf_get_cpu_features_cb = NULL;
+retro_log_printf_t log_cb;
+static retro_video_refresh_t video_cb;
+static retro_audio_sample_t audio_cb;
+static retro_audio_sample_batch_t audio_batch_cb;
+static retro_environment_t environ_cb;
+static retro_input_poll_t input_poll_cb;
+static retro_input_state_t input_state_cb;
+static double last_sound_rate = 0.0;
+
+static bool libretro_supports_option_categories = false;
+static bool libretro_supports_bitmasks = false;
+
+static MDFN_Surface *surf = NULL;
+
+static bool failed_init = false;
+
+std::string retro_base_directory;
+
 static unsigned disk_index = 0;
 static std:vector<std::string> disk_label;
 struct retro_disk_control_ext_callback dskcb;
@@ -916,26 +936,6 @@ void MDFN_PrintError(const char *format, ...)
 
    va_end(ap);
 }
-
-struct retro_perf_callback perf_cb;
-retro_get_cpu_features_t perf_get_cpu_features_cb = NULL;
-retro_log_printf_t log_cb;
-static retro_video_refresh_t video_cb;
-static retro_audio_sample_t audio_cb;
-static retro_audio_sample_batch_t audio_batch_cb;
-static retro_environment_t environ_cb;
-static retro_input_poll_t input_poll_cb;
-static retro_input_state_t input_state_cb;
-static double last_sound_rate = 0.0;
-
-static bool libretro_supports_option_categories = false;
-static bool libretro_supports_bitmasks = false;
-
-static MDFN_Surface *surf = NULL;
-
-static bool failed_init = false;
-
-std::string retro_base_directory;
 
 static void check_system_specs(void)
 {
