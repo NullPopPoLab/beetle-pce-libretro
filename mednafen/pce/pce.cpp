@@ -59,6 +59,7 @@ bool PCE_ACEnabled;
 uint64 PCE_TimestampBase;	// Only used with the debugger for the time being.
 
 static bool IsSGX;
+static int DiscIdx=-1;
 
 uint8 BaseRAM[32768]; // 8KB for PCE, 32KB for Super Grafx
 
@@ -513,10 +514,41 @@ MDFN_COLD int PCE_LoadCD(std::vector<CDIF *> *CDInterfaces)
 
 	SCSICD_SetDisc(true, NULL, true);
 	SCSICD_SetDisc(false, (*cdifs)[0], true);
+	DiscIdx=0;
 
 	MDFN_printf("Arcade Card Emulation:  %s\n", PCE_ACEnabled ? "Enabled" : "Disabled");
 
 	return LoadCommon();
+}
+
+MDFN_COLD int PCE_GetCDIndex(){
+	return DiscIdx;
+}
+
+MDFN_COLD bool PCE_IsTrayOpen(){
+
+	return SCSICD_IsTrayOpen();
+}
+
+MDFN_COLD bool PCE_EjectCD(){
+
+	if(!cdifs)return false;
+
+	SCSICD_SetDisc(true, NULL, true);
+
+	return true;
+}
+
+MDFN_COLD bool PCE_SwapCD(unsigned idx){
+
+	if(!cdifs)return false;
+	if(idx>=cdifs->size())return false;
+
+	SCSICD_SetDisc(true, NULL, true);
+	SCSICD_SetDisc(false, (*cdifs)[idx], true);
+	DiscIdx=idx;
+
+	retuyrn true;
 }
 
 static MDFN_COLD void Cleanup(void)

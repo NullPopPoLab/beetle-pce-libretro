@@ -24,6 +24,10 @@ extern void PCE_Power(void);
 
 extern MDFN_COLD int PCE_Load(const uint8_t *data, size_t size, const char *ext);
 extern MDFN_COLD int PCE_LoadCD(std::vector<CDIF *> *CDInterfaces);
+extern MDFN_COLD int PCE_GetCDIndex();
+extern MDFN_COLD bool PCE_IsTrayOpen();
+extern MDFN_COLD bool PCE_EjectCD();
+extern MDFN_COLD bool PCE_SwapCD(unsigned idx);
 extern MDFN_COLD void PCE_CloseGame(void);
 
 extern void Emulate(EmulateSpecStruct *espec);
