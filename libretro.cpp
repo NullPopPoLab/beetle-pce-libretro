@@ -719,10 +719,12 @@ static bool MDFNI_LoadCD(const char *path, const char *ext)
 
       ReadM3U(file_list, path);
 
+      ret = true;
       for(unsigned i = 0; i < file_list.size(); i++)
       {
          CDIF *cdif = CDIF_Open(file_list[i].c_str(), cdimagecache);
-         CDInterfaces.push_back(cdif);
+         if(cdif)CDInterfaces.push_back(cdif);
+         else ret=false;
       }
    }
    else
