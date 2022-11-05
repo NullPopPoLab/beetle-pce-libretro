@@ -7,6 +7,8 @@
 
 #ifndef ZCONF_H
 #define ZCONF_H
+#cmakedefine Z_PREFIX
+#cmakedefine Z_HAVE_UNISTD_H
 
 /*
  * If you *really* need a unique prefix for all types and library functions,
@@ -387,9 +389,8 @@
 #  define FAR
 #endif
 
-#if !defined(__MACTYPES__) && !defined(__BYTE_DEFINED__)
+#if !defined(__MACTYPES__)
 typedef unsigned char  Byte;  /* 8 bits */
-#define __BYTE_DEFINED__
 #endif
 typedef unsigned int   uInt;  /* 16 bits or more */
 typedef unsigned long  uLong; /* 32 bits or more */
