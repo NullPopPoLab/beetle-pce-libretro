@@ -37,8 +37,8 @@ int setting_pce_resamp_quality = 3;
 int setting_pce_multitap = 1;
 int setting_pce_scaling = 0;
 uint32_t setting_pce_cdspeed = 1;
-std::string setting_pce_cdbios = "pcengine/syscard3.pce";
-std::string setting_pce_gecdbios = "pcengine/gexpress.pce";
+std::string setting_pce_cdbios = "syscard3.pce";
+std::string setting_pce_gecdbios = "gexpress.pce";
 
 uint64 MDFN_GetSettingUI(const char *name)
 {
