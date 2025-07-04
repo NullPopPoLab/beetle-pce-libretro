@@ -1379,13 +1379,13 @@ bool retro_load_game(const struct retro_game_info *info)
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_UP,    "D-Pad Up" },\
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_DOWN,  "D-Pad Down" },\
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_RIGHT, "D-Pad Right" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_B,     "II" },\
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_A,     "I" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,     "IV" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,     "III" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L,     "V" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_R,     "VI" },\
-      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L2,    "Mode Switch" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_B,     "II" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_C,     "III" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Z,     "IV" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,     "V" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,     "VI" },\
+      { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_MENU,    "Mode Switch" },\
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT,    "Select" },\
       { INDEX, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_START,    "Run" },
       button_ids(0)
@@ -1492,24 +1492,24 @@ void retro_unload_game(void)
 static void update_input(void)
 {
    unsigned i,j;
-   int16_t joy_bits[MAX_PLAYERS] = {0};
+   int32_t joy_bits[MAX_PLAYERS] = {0};
 
    static int turbo_map[]     = { -1,-1,-1,-1,-1,-1,-1,-1, 1, 0,-1,-1,-1,-1,-1 };
    static int turbo_map_alt[] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1, 0 };
    static unsigned map[] = {
-      RETRO_DEVICE_ID_JOYPAD_A,
-      RETRO_DEVICE_ID_JOYPAD_B,
-      RETRO_DEVICE_ID_JOYPAD_SELECT,
-      RETRO_DEVICE_ID_JOYPAD_START,
+      RETRO_DEVICE_ID_JOYPAD_A, // I
+      RETRO_DEVICE_ID_JOYPAD_B, // II
+      RETRO_DEVICE_ID_JOYPAD_SELECT, // SELECT
+      RETRO_DEVICE_ID_JOYPAD_START, // RUN
       RETRO_DEVICE_ID_JOYPAD_UP,
       RETRO_DEVICE_ID_JOYPAD_RIGHT,
       RETRO_DEVICE_ID_JOYPAD_DOWN,
       RETRO_DEVICE_ID_JOYPAD_LEFT,
-      RETRO_DEVICE_ID_JOYPAD_Y,
-      RETRO_DEVICE_ID_JOYPAD_X,
-      RETRO_DEVICE_ID_JOYPAD_L,
-      RETRO_DEVICE_ID_JOYPAD_R,
-      RETRO_DEVICE_ID_JOYPAD_L2,
+      RETRO_DEVICE_ID_JOYPAD_C, // III 
+      RETRO_DEVICE_ID_JOYPAD_Z, // IV 
+      RETRO_DEVICE_ID_JOYPAD_Y, // V
+      RETRO_DEVICE_ID_JOYPAD_X, // VI 
+      RETRO_DEVICE_ID_JOYPAD_MENU, // mode 
       RETRO_DEVICE_ID_JOYPAD_L3,
       RETRO_DEVICE_ID_JOYPAD_R3
    };
@@ -1520,7 +1520,7 @@ static void update_input(void)
          joy_bits[j] = input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_MASK);
       else
       {
-         for (i = 0; i < (RETRO_DEVICE_ID_JOYPAD_R3+1); i++)
+         for (i = 0; i < RETRO_DEVICE_ID_JOYPAD_BUTTON_MAX; i++)
             joy_bits[j] |= input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, i) ? (1 << i) : 0;
       }
    }
