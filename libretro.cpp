@@ -39,6 +39,8 @@
 #define FB_HEIGHT 270
 #define FB_WIDTH_ALIGN 1368
 
+#define CUSTOM_VERSION "+NC41"
+
 static bool cdimagecache = false;
 static bool show_advanced_input_settings = true;
 static bool use_palette = false;
@@ -1824,7 +1826,7 @@ void retro_get_system_info(struct retro_system_info *info)
 #ifndef GIT_VERSION
 #define GIT_VERSION ""
 #endif
-   info->library_version  = MEDNAFEN_CORE_VERSION GIT_VERSION;
+   info->library_version  = MEDNAFEN_CORE_VERSION GIT_VERSION CUSTOM_VERSION;
    info->need_fullpath    = true;
    info->valid_extensions = MEDNAFEN_CORE_EXTENSIONS;
    info->block_extract    = false;
