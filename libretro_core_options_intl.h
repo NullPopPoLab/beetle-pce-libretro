@@ -101,27 +101,13 @@ extern "C" {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_AR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_AR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_AR NULL
-#define PCE_TURBO_TOGGLING_LABEL_AR NULL
-#define PCE_TURBO_TOGGLING_INFO_0_AR NULL
 #define OPTION_VAL_TOGGLE_AR NULL
 #define OPTION_VAL_ALWAYS_AR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_AR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_AR NULL
 #define PCE_TURBO_DELAY_LABEL_AR NULL
 #define PCE_TURBO_DELAY_INFO_0_AR NULL
 #define OPTION_VAL_FAST_AR "سريع"
 #define OPTION_VAL_MEDIUM_AR NULL
 #define OPTION_VAL_SLOW_AR NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_AR NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_AR NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_AR NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_AR NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_AR NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_AR NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_AR NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_AR NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_AR NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_AR NULL
 #define PCE_CDIMAGECACHE_LABEL_AR NULL
 #define PCE_CDIMAGECACHE_INFO_0_AR NULL
 #define PCE_CDBIOS_LABEL_AR NULL
@@ -563,35 +549,6 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_AR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_AR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_AR },
-         { "always", OPTION_VAL_ALWAYS_AR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_AR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_AR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_AR,
       NULL,
@@ -605,146 +562,6 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_AR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -1057,27 +874,13 @@ struct retro_core_options_v2 options_ar = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_AST NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_AST NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_AST NULL
-#define PCE_TURBO_TOGGLING_LABEL_AST NULL
-#define PCE_TURBO_TOGGLING_INFO_0_AST NULL
 #define OPTION_VAL_TOGGLE_AST NULL
 #define OPTION_VAL_ALWAYS_AST NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_AST NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_AST NULL
 #define PCE_TURBO_DELAY_LABEL_AST NULL
 #define PCE_TURBO_DELAY_INFO_0_AST NULL
 #define OPTION_VAL_FAST_AST NULL
 #define OPTION_VAL_MEDIUM_AST NULL
 #define OPTION_VAL_SLOW_AST NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_AST NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_AST NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_AST NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_AST NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_AST NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_AST NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_AST NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_AST NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_AST NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_AST NULL
 #define PCE_CDIMAGECACHE_LABEL_AST NULL
 #define PCE_CDIMAGECACHE_INFO_0_AST NULL
 #define PCE_CDBIOS_LABEL_AST NULL
@@ -1519,35 +1322,6 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_AST,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_AST,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_AST },
-         { "always", OPTION_VAL_ALWAYS_AST },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_AST,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_AST,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_AST,
       NULL,
@@ -1561,146 +1335,6 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_AST,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -2013,27 +1647,13 @@ struct retro_core_options_v2 options_ast = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_BE "Выбар 2- ці 6-ці кнопкавага кантролера па змаўчанні для парта 4. Дадзеная опцыя ўжываецца толькі пры запуску ядра. Для пераключэння на ляту выкарыстоўвайце кнопку 'Змяніць рэжым'. УВАГА: у несумяшчальных гульнях 6-кнопкавы геймпад можа выклікаць багі кіравання."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_BE "Тып джойсціка Гульца 5"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_BE "Выбар 2- ці 6-ці кнопкавага кантролера па змаўчанні для парта 5. Дадзеная опцыя ўжываецца толькі пры запуску ядра. Для пераключэння на ляту выкарыстоўвайце кнопку 'Змяніць рэжым'. УВАГА: у несумяшчальных гульнях 6-кнопкавы геймпад можа выклікаць багі кіравання."
-#define PCE_TURBO_TOGGLING_LABEL_BE "Рэжым турба-кнопак"
-#define PCE_TURBO_TOGGLING_INFO_0_BE "Уключэнне турба-кнопак. Актыватары (кнопкі III і IV) могуць працаваць як пераключальнікі або як вылучаныя кнопкі, якія( ўключаюцца пры ўтрыманні)."
 #define OPTION_VAL_TOGGLE_BE "Пераключальнікі"
 #define OPTION_VAL_ALWAYS_BE "Вылучаныя"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_BE NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_BE NULL
 #define PCE_TURBO_DELAY_LABEL_BE NULL
 #define PCE_TURBO_DELAY_INFO_0_BE NULL
 #define OPTION_VAL_FAST_BE NULL
 #define OPTION_VAL_MEDIUM_BE NULL
 #define OPTION_VAL_SLOW_BE NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_BE NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_BE NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_BE NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_BE NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_BE NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_BE NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_BE NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_BE NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_BE NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_BE NULL
 #define PCE_CDIMAGECACHE_LABEL_BE "Кэшаваць выяву CD (патрабуецца перазапуск)"
 #define PCE_CDIMAGECACHE_INFO_0_BE "Пры запуску выява дыска цалкам загружаецца ў памяць. Паскарае загрузку, але павялічвае час запуску."
 #define PCE_CDBIOS_LABEL_BE NULL
@@ -2475,35 +2095,6 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_BE,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_BE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_BE },
-         { "always", OPTION_VAL_ALWAYS_BE },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_BE,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_BE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_BE,
       NULL,
@@ -2517,146 +2108,6 @@ struct retro_core_option_v2_definition option_defs_be[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_BE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -2969,27 +2420,13 @@ struct retro_core_options_v2 options_be = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_BG NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_BG NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_BG NULL
-#define PCE_TURBO_TOGGLING_LABEL_BG NULL
-#define PCE_TURBO_TOGGLING_INFO_0_BG NULL
 #define OPTION_VAL_TOGGLE_BG NULL
 #define OPTION_VAL_ALWAYS_BG NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_BG NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_BG NULL
 #define PCE_TURBO_DELAY_LABEL_BG NULL
 #define PCE_TURBO_DELAY_INFO_0_BG NULL
 #define OPTION_VAL_FAST_BG NULL
 #define OPTION_VAL_MEDIUM_BG NULL
 #define OPTION_VAL_SLOW_BG NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_BG NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_BG NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_BG NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_BG NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_BG NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_BG NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_BG NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_BG NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_BG NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_BG NULL
 #define PCE_CDIMAGECACHE_LABEL_BG NULL
 #define PCE_CDIMAGECACHE_INFO_0_BG NULL
 #define PCE_CDBIOS_LABEL_BG NULL
@@ -3431,35 +2868,6 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_BG,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_BG,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_BG },
-         { "always", OPTION_VAL_ALWAYS_BG },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_BG,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_BG,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_BG,
       NULL,
@@ -3473,146 +2881,6 @@ struct retro_core_option_v2_definition option_defs_bg[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_BG,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -3925,27 +3193,13 @@ struct retro_core_options_v2 options_bg = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_CA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_CA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_CA NULL
-#define PCE_TURBO_TOGGLING_LABEL_CA NULL
-#define PCE_TURBO_TOGGLING_INFO_0_CA NULL
 #define OPTION_VAL_TOGGLE_CA NULL
 #define OPTION_VAL_ALWAYS_CA NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_CA NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CA NULL
 #define PCE_TURBO_DELAY_LABEL_CA NULL
 #define PCE_TURBO_DELAY_INFO_0_CA NULL
 #define OPTION_VAL_FAST_CA "Ràpida"
 #define OPTION_VAL_MEDIUM_CA NULL
 #define OPTION_VAL_SLOW_CA NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_CA NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_CA NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_CA NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_CA NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_CA NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_CA NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_CA NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_CA NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_CA NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_CA NULL
 #define PCE_CDIMAGECACHE_LABEL_CA NULL
 #define PCE_CDIMAGECACHE_INFO_0_CA NULL
 #define PCE_CDBIOS_LABEL_CA NULL
@@ -4387,35 +3641,6 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_CA,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_CA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_CA },
-         { "always", OPTION_VAL_ALWAYS_CA },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_CA,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_CA,
       NULL,
@@ -4429,146 +3654,6 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_CA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -4881,27 +3966,13 @@ struct retro_core_options_v2 options_ca = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_CHS NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_CHS NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_CHS NULL
-#define PCE_TURBO_TOGGLING_LABEL_CHS NULL
-#define PCE_TURBO_TOGGLING_INFO_0_CHS NULL
 #define OPTION_VAL_TOGGLE_CHS "切换"
 #define OPTION_VAL_ALWAYS_CHS NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_CHS NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CHS NULL
 #define PCE_TURBO_DELAY_LABEL_CHS NULL
 #define PCE_TURBO_DELAY_INFO_0_CHS NULL
 #define OPTION_VAL_FAST_CHS "快"
 #define OPTION_VAL_MEDIUM_CHS "中等"
 #define OPTION_VAL_SLOW_CHS "慢"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_CHS NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_CHS NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_CHS NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_CHS NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_CHS NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_CHS NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_CHS NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_CHS NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_CHS NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_CHS NULL
 #define PCE_CDIMAGECACHE_LABEL_CHS "启用CD光盘缓存（重启以生效）"
 #define PCE_CDIMAGECACHE_INFO_0_CHS "在启动时将完整的镜像加载到内存中，以增加启动时间为代价，或许能减少游戏中的加载时间。"
 #define PCE_CDBIOS_LABEL_CHS NULL
@@ -5343,35 +4414,6 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_CHS,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_CHS,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_CHS },
-         { "always", OPTION_VAL_ALWAYS_CHS },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_CHS,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CHS,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_CHS,
       NULL,
@@ -5385,146 +4427,6 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_CHS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -5837,27 +4739,13 @@ struct retro_core_options_v2 options_chs = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_CHT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_CHT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_CHT NULL
-#define PCE_TURBO_TOGGLING_LABEL_CHT "連發模式"
-#define PCE_TURBO_TOGGLING_INFO_0_CHT "設定[III/IV鍵]連發模式(開關/專用), 設定<開關>時提供給[I/II鍵]使用。"
 #define OPTION_VAL_TOGGLE_CHT "開關"
 #define OPTION_VAL_ALWAYS_CHT "專用"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_CHT "備用連發按鍵"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CHT "開啟時[L3/R3鍵]作為連發的開關, 僅限「連發模式」設定為<開關>模式, 並且[L3/R3鍵]未設定按鍵時生效, 用於切換為主機的6鍵控制器。"
 #define PCE_TURBO_DELAY_LABEL_CHT "連發速度"
 #define PCE_TURBO_DELAY_INFO_0_CHT "設定按鍵連發的速度。"
 #define OPTION_VAL_FAST_CHT "快速"
 #define OPTION_VAL_MEDIUM_CHT "中速"
 #define OPTION_VAL_SLOW_CHT "慢速"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_CHT "手把1 - I鍵連發"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_CHT "手把1 - II鍵連發"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_CHT "手把2 - I鍵連發"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_CHT "手把2 - II鍵連發"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_CHT "手把3 - I鍵連發"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_CHT "手把3 - II鍵連發"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_CHT "手把4 - I鍵連發"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_CHT "手把4 - II鍵連發"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_CHT "手把5 - I鍵連發"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_CHT "手把5 - II鍵連發"
 #define PCE_CDIMAGECACHE_LABEL_CHT "映像檔快取 (需要重新啟動)"
 #define PCE_CDIMAGECACHE_INFO_0_CHT "將光碟映像檔完整載入到記憶體, 增加啟動時間並減少讀取的時間。"
 #define PCE_CDBIOS_LABEL_CHT "光碟系統卡 (需要重新啟動)"
@@ -6299,35 +5187,6 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_CHT,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_CHT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_CHT },
-         { "always", OPTION_VAL_ALWAYS_CHT },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_CHT,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CHT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_CHT,
       NULL,
@@ -6341,146 +5200,6 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_CHT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -6793,27 +5512,13 @@ struct retro_core_options_v2 options_cht = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_CS "Zvolte, zda má mít joypad port 4 ve výchozím nastavení 2 nebo 6 tlačítek. Tato volba se použije pouze při spuštění jádra, pokud chcete přepínat za běhu obsahu, použijte tlačítko \"Přepínač režimů\". POZNÁMKA: 6tlačítkový joypad může mít v nekompatibilních hrách podivné chování."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_CS "P5 Výchozí typ joypadu"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_CS "Zvolte, zda má mít joypad port 5 ve výchozím nastavení 2 nebo 6 tlačítek. Tato volba se použije pouze při spuštění jádra, pokud chcete přepínat za běhu obsahu, použijte tlačítko \"Přepínač režimů\". POZNÁMKA: 6tlačítkový joypad může mít v nekompatibilních hrách podivné chování."
-#define PCE_TURBO_TOGGLING_LABEL_CS "Režim Turbo Hotkey"
-#define PCE_TURBO_TOGGLING_INFO_0_CS "Povolení turbo tlačítek. Klávesové zkratky (tlačítka III a IV) se mohou chovat jako přepínače nebo jako vyhrazená turbo tlačítka (pro použití je třeba je podržet)."
 #define OPTION_VAL_TOGGLE_CS "Přepínač"
 #define OPTION_VAL_ALWAYS_CS "Věnováno"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_CS "Alternativní Hotkey Turbo"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CS "Přiřazení tlačítek L3/R3 zařízení RetroPad jako turbo klávesových zkratek namísto tlačítek III a IV. Funguje pouze v režimu 'Přepínač' a pouze pokud není tlačítkům L3/R3 nic přiřazeno. Pomocí této funkce se můžete vyhnout přemapování tlačítek III a IV při přepnutí do režimu šestitlačítkového ovladače."
 #define PCE_TURBO_DELAY_LABEL_CS "Turbo Rychlost"
 #define PCE_TURBO_DELAY_INFO_0_CS "Zvolte, jak rychle se budou opakovat stisky tlačítek."
 #define OPTION_VAL_FAST_CS "Rychle"
 #define OPTION_VAL_MEDIUM_CS "Střední"
 #define OPTION_VAL_SLOW_CS "Pomalu"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_CS NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_CS NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_CS NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_CS NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_CS NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_CS NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_CS NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_CS NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_CS NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_CS NULL
 #define PCE_CDIMAGECACHE_LABEL_CS "Vyrovnávací paměť obrazu CD (nutný restart)"
 #define PCE_CDIMAGECACHE_INFO_0_CS "Načíst kompletní obraz do paměti při spuštění. Může potenciálně zkrátit dobu načítání za cenu prodloužení doby spouštění."
 #define PCE_CDBIOS_LABEL_CS "CD Bios (Nutný Restart)"
@@ -7255,35 +5960,6 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_CS,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_CS,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_CS },
-         { "always", OPTION_VAL_ALWAYS_CS },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_CS,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CS,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_CS,
       NULL,
@@ -7297,146 +5973,6 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_CS,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -7749,27 +6285,13 @@ struct retro_core_options_v2 options_cs = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_CY NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_CY NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_CY NULL
-#define PCE_TURBO_TOGGLING_LABEL_CY NULL
-#define PCE_TURBO_TOGGLING_INFO_0_CY NULL
 #define OPTION_VAL_TOGGLE_CY NULL
 #define OPTION_VAL_ALWAYS_CY NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_CY NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CY NULL
 #define PCE_TURBO_DELAY_LABEL_CY NULL
 #define PCE_TURBO_DELAY_INFO_0_CY NULL
 #define OPTION_VAL_FAST_CY NULL
 #define OPTION_VAL_MEDIUM_CY NULL
 #define OPTION_VAL_SLOW_CY NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_CY NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_CY NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_CY NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_CY NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_CY NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_CY NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_CY NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_CY NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_CY NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_CY NULL
 #define PCE_CDIMAGECACHE_LABEL_CY NULL
 #define PCE_CDIMAGECACHE_INFO_0_CY NULL
 #define PCE_CDBIOS_LABEL_CY NULL
@@ -8211,35 +6733,6 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_CY,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_CY,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_CY },
-         { "always", OPTION_VAL_ALWAYS_CY },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_CY,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_CY,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_CY,
       NULL,
@@ -8253,146 +6746,6 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_CY,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -8705,27 +7058,13 @@ struct retro_core_options_v2 options_cy = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_DA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_DA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_DA NULL
-#define PCE_TURBO_TOGGLING_LABEL_DA NULL
-#define PCE_TURBO_TOGGLING_INFO_0_DA NULL
 #define OPTION_VAL_TOGGLE_DA NULL
 #define OPTION_VAL_ALWAYS_DA NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_DA NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_DA NULL
 #define PCE_TURBO_DELAY_LABEL_DA NULL
 #define PCE_TURBO_DELAY_INFO_0_DA NULL
 #define OPTION_VAL_FAST_DA NULL
 #define OPTION_VAL_MEDIUM_DA NULL
 #define OPTION_VAL_SLOW_DA NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_DA NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_DA NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_DA NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_DA NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_DA NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_DA NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_DA NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_DA NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_DA NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_DA NULL
 #define PCE_CDIMAGECACHE_LABEL_DA NULL
 #define PCE_CDIMAGECACHE_INFO_0_DA NULL
 #define PCE_CDBIOS_LABEL_DA NULL
@@ -9167,35 +7506,6 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_DA,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_DA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_DA },
-         { "always", OPTION_VAL_ALWAYS_DA },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_DA,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_DA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_DA,
       NULL,
@@ -9209,146 +7519,6 @@ struct retro_core_option_v2_definition option_defs_da[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_DA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -9661,27 +7831,13 @@ struct retro_core_options_v2 options_da = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_DE "Hier wählen, ob Joypad von Port 4 standardmäßig 2 oder 6 Tasten besitzen soll. Diese Option wird nur beim Start des Cores ausgeführt. Wenn umgeschaltet werden soll, während der Inhalt läuft, bitte den „Moduswechsel“ verwenden. HINWEIS: Ein 6-Tasten-Joypad kann sich in nicht kompatiblen Spielen seltsam verhalten."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_DE "P5 Standard-Joypad-Typ"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_DE "Hier wählen, ob Joypad von Port 5 standardmäßig 2 oder 6 Tasten besitzen soll. Diese Option wird nur beim Start des Cores ausgeführt. Wenn umgeschaltet werden soll, während der Inhalt läuft, bitte den „Moduswechsel“ verwenden. HINWEIS: Ein 6-Tasten-Joypad kann sich in nicht kompatiblen Spielen seltsam verhalten."
-#define PCE_TURBO_TOGGLING_LABEL_DE "Turbo-Hotkey-Modus"
-#define PCE_TURBO_TOGGLING_INFO_0_DE "Turbotasten aktivieren. Hotkeys (Tasten III und IV) können entweder als Umschalter oder als dedizierte Turbotasten (zum Verwenden gedrückt halten) fungieren."
 #define OPTION_VAL_TOGGLE_DE "Umschalten"
 #define OPTION_VAL_ALWAYS_DE "Dediziert"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_DE "Alternative Turbo-Hotkeys"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_DE "RetroPads L3/R3-Tasten als Turbo-Hotkeys anstelle der Tasten III und IV zuweisen. Funktioniert nur im „Umschalten“-Modus und nur, solange den L3/R3-Tasten nichts zugewiesen ist. Damit die Belegung der Tasten III und IV vermieden werden, wenn in den 6-Tasten-Controller-Modus gewechselt wird."
 #define PCE_TURBO_DELAY_LABEL_DE "Turbogeschwindigkeit"
 #define PCE_TURBO_DELAY_INFO_0_DE "Auswählen, wie schnell Tastenbetätigungen wiederholt werden."
 #define OPTION_VAL_FAST_DE "Schnell"
 #define OPTION_VAL_MEDIUM_DE "Mittel"
 #define OPTION_VAL_SLOW_DE "Langsam"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_DE NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_DE NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_DE NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_DE NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_DE NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_DE NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_DE NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_DE NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_DE NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_DE NULL
 #define PCE_CDIMAGECACHE_LABEL_DE "CD-Abbild-Cache (Neustart erforderlich)"
 #define PCE_CDIMAGECACHE_INFO_0_DE "Das komplette Abbild beim Start in den Arbeitsspeicher laden. Kann die Ladezeiten auf Kosten einer längeren Startzeit verkürzen."
 #define PCE_CDBIOS_LABEL_DE "CD-BIOS (Neustart erforderlich)"
@@ -10123,35 +8279,6 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_DE,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_DE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_DE },
-         { "always", OPTION_VAL_ALWAYS_DE },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_DE,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_DE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_DE,
       NULL,
@@ -10165,146 +8292,6 @@ struct retro_core_option_v2_definition option_defs_de[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_DE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -10617,27 +8604,13 @@ struct retro_core_options_v2 options_de = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_EL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_EL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_EL NULL
-#define PCE_TURBO_TOGGLING_LABEL_EL NULL
-#define PCE_TURBO_TOGGLING_INFO_0_EL NULL
 #define OPTION_VAL_TOGGLE_EL NULL
 #define OPTION_VAL_ALWAYS_EL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_EL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EL NULL
 #define PCE_TURBO_DELAY_LABEL_EL NULL
 #define PCE_TURBO_DELAY_INFO_0_EL NULL
 #define OPTION_VAL_FAST_EL "Γρήγορη Ταχύτητα"
 #define OPTION_VAL_MEDIUM_EL NULL
 #define OPTION_VAL_SLOW_EL NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_EL NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_EL NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_EL NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_EL NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_EL NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_EL NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_EL NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_EL NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_EL NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_EL NULL
 #define PCE_CDIMAGECACHE_LABEL_EL NULL
 #define PCE_CDIMAGECACHE_INFO_0_EL NULL
 #define PCE_CDBIOS_LABEL_EL NULL
@@ -11079,35 +9052,6 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_EL,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_EL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_EL },
-         { "always", OPTION_VAL_ALWAYS_EL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_EL,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_EL,
       NULL,
@@ -11121,146 +9065,6 @@ struct retro_core_option_v2_definition option_defs_el[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_EL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -11573,27 +9377,13 @@ struct retro_core_options_v2 options_el = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_EN "Choose if port 4 joypad should be 2 or 6 buttons by default. This option is only applied when the core starts, if you want to switch while content is running, use the 'Mode Switch' button. NOTE: 6 buttons joypad can have weird behaviours in non-compatible games."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_EN NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_EN "Choose if port 5 joypad should be 2 or 6 buttons by default. This option is only applied when the core starts, if you want to switch while content is running, use the 'Mode Switch' button. NOTE: 6 buttons joypad can have weird behaviours in non-compatible games."
-#define PCE_TURBO_TOGGLING_LABEL_EN NULL
-#define PCE_TURBO_TOGGLING_INFO_0_EN NULL
 #define OPTION_VAL_TOGGLE_EN NULL
 #define OPTION_VAL_ALWAYS_EN NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_EN NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EN NULL
 #define PCE_TURBO_DELAY_LABEL_EN NULL
 #define PCE_TURBO_DELAY_INFO_0_EN NULL
 #define OPTION_VAL_FAST_EN NULL
 #define OPTION_VAL_MEDIUM_EN NULL
 #define OPTION_VAL_SLOW_EN NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_EN NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_EN NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_EN NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_EN NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_EN NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_EN NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_EN NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_EN NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_EN NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_EN NULL
 #define PCE_CDIMAGECACHE_LABEL_EN NULL
 #define PCE_CDIMAGECACHE_INFO_0_EN "Load the complete image into memory at start-up. Can potentially decrease loading times at the cost of an increased start-up time."
 #define PCE_CDBIOS_LABEL_EN NULL
@@ -12035,35 +9825,6 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_EN,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_EN,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_EN },
-         { "always", OPTION_VAL_ALWAYS_EN },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_EN,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EN,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_EN,
       NULL,
@@ -12077,146 +9838,6 @@ struct retro_core_option_v2_definition option_defs_en[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_EN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -12529,27 +10150,13 @@ struct retro_core_options_v2 options_en = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_EO NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_EO NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_EO NULL
-#define PCE_TURBO_TOGGLING_LABEL_EO NULL
-#define PCE_TURBO_TOGGLING_INFO_0_EO NULL
 #define OPTION_VAL_TOGGLE_EO NULL
 #define OPTION_VAL_ALWAYS_EO NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_EO NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EO NULL
 #define PCE_TURBO_DELAY_LABEL_EO NULL
 #define PCE_TURBO_DELAY_INFO_0_EO NULL
 #define OPTION_VAL_FAST_EO NULL
 #define OPTION_VAL_MEDIUM_EO NULL
 #define OPTION_VAL_SLOW_EO NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_EO NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_EO NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_EO NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_EO NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_EO NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_EO NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_EO NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_EO NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_EO NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_EO NULL
 #define PCE_CDIMAGECACHE_LABEL_EO NULL
 #define PCE_CDIMAGECACHE_INFO_0_EO NULL
 #define PCE_CDBIOS_LABEL_EO NULL
@@ -12991,35 +10598,6 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_EO,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_EO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_EO },
-         { "always", OPTION_VAL_ALWAYS_EO },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_EO,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_EO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_EO,
       NULL,
@@ -13033,146 +10611,6 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_EO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -13485,27 +10923,13 @@ struct retro_core_options_v2 options_eo = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_ES "Indica si el mando del puerto 4 debería ser uno de 2 o 6 botones por defecto. Esta opción se aplica únicamente al iniciar el núcleo: si deseas cambiar el tipo de mando mientras se esté ejecutando un contenido, debes usar el botón de cambio de modo. NOTA: los mandos de 6 botones pueden producir comportamientos extraños en juegos que no sean compatibles con este mando."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_ES "Tipo de mando predeterminado del J5"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_ES "Indica si el mando del puerto 5 debería ser uno de 2 o 6 botones por defecto. Esta opción se aplica únicamente al iniciar el núcleo: si deseas cambiar el tipo de mando mientras se esté ejecutando un contenido, debes usar el botón de cambio de modo. NOTA: los mandos de 6 botones pueden producir comportamientos extraños en juegos que no sean compatibles con este mando."
-#define PCE_TURBO_TOGGLING_LABEL_ES "Modo de la tecla rápida del turbo"
-#define PCE_TURBO_TOGGLING_INFO_0_ES "Activa los botones con turbo. Las teclas rápidas (los botones III y IV) pueden hacer de conmutadores o de botones de turbo dedicados (mantenlos pulsados para usarlos)."
 #define OPTION_VAL_TOGGLE_ES "Activación manual"
 #define OPTION_VAL_ALWAYS_ES "Botones dedicados"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_ES "Teclas rápidas alternativas para el turbo"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_ES "Asigna los botones L3/R3 del RetroPad como teclas rápidas de turbo en vez de usar los botones III y IV. Solo funciona en el modo «Alternar» y mientras no haya otra acción asignada a los botones L3/R3. Con esta opción no tendrás que reasignar los botones III y IV cuando cambies al modo de mando de 6 botones."
 #define PCE_TURBO_DELAY_LABEL_ES "Velocidad del turbo"
 #define PCE_TURBO_DELAY_INFO_0_ES "Indica la velocidad con la que se repetirán las pulsaciones de los botones."
 #define OPTION_VAL_FAST_ES "Rápida"
 #define OPTION_VAL_MEDIUM_ES "Media"
 #define OPTION_VAL_SLOW_ES "Lenta"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_ES "Turbo del botón I del J1"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_ES "Turbo del botón II del J1"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_ES "Turbo del botón I del J2"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_ES "Turbo del botón II del J2"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_ES "Turbo del botón I del J3"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_ES "Turbo del botón II del J3"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_ES "Turbo del botón I del J4"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_ES "Turbo del botón II del J4"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_ES "Turbo del botón I del J5"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_ES "Turbo del botón II del J5"
 #define PCE_CDIMAGECACHE_LABEL_ES "Cachear imagen de CD (es necesario reiniciar)"
 #define PCE_CDIMAGECACHE_INFO_0_ES "Carga la imagen de CD entera en la memoria al arrancar. Podría reducir los tiempos de carga a costa de aumentar el tiempo de arranque."
 #define PCE_CDBIOS_LABEL_ES "BIOS para CD (es necesario reiniciar)"
@@ -13947,35 +11371,6 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_ES,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_ES,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_ES },
-         { "always", OPTION_VAL_ALWAYS_ES },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_ES,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_ES,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_ES,
       NULL,
@@ -13989,146 +11384,6 @@ struct retro_core_option_v2_definition option_defs_es[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_ES,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -14441,27 +11696,13 @@ struct retro_core_options_v2 options_es = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_FA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_FA NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_FA NULL
-#define PCE_TURBO_TOGGLING_LABEL_FA NULL
-#define PCE_TURBO_TOGGLING_INFO_0_FA NULL
 #define OPTION_VAL_TOGGLE_FA NULL
 #define OPTION_VAL_ALWAYS_FA "اختصاصی"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_FA NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FA NULL
 #define PCE_TURBO_DELAY_LABEL_FA NULL
 #define PCE_TURBO_DELAY_INFO_0_FA NULL
 #define OPTION_VAL_FAST_FA "سریع"
 #define OPTION_VAL_MEDIUM_FA "متوسط"
 #define OPTION_VAL_SLOW_FA "آهسته"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_FA NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_FA NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_FA NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_FA NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_FA NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_FA NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_FA NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_FA NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_FA NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_FA NULL
 #define PCE_CDIMAGECACHE_LABEL_FA NULL
 #define PCE_CDIMAGECACHE_INFO_0_FA NULL
 #define PCE_CDBIOS_LABEL_FA NULL
@@ -14903,35 +12144,6 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_FA,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_FA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_FA },
-         { "always", OPTION_VAL_ALWAYS_FA },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_FA,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_FA,
       NULL,
@@ -14945,146 +12157,6 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_FA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -15397,27 +12469,13 @@ struct retro_core_options_v2 options_fa = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_FI NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_FI NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_FI NULL
-#define PCE_TURBO_TOGGLING_LABEL_FI NULL
-#define PCE_TURBO_TOGGLING_INFO_0_FI NULL
 #define OPTION_VAL_TOGGLE_FI NULL
 #define OPTION_VAL_ALWAYS_FI NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_FI "Vaihtoehtoinen turbo-pikanäppäin"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FI NULL
 #define PCE_TURBO_DELAY_LABEL_FI "Turbonopeus"
 #define PCE_TURBO_DELAY_INFO_0_FI "Valitse miten nopeasti painikkeen painallukset toistetaan."
 #define OPTION_VAL_FAST_FI "Nopea"
 #define OPTION_VAL_MEDIUM_FI NULL
 #define OPTION_VAL_SLOW_FI NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_FI NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_FI NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_FI NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_FI NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_FI NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_FI NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_FI NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_FI NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_FI NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_FI NULL
 #define PCE_CDIMAGECACHE_LABEL_FI "CD-levykuvan välimuisti (Uudelleenkäynnistys vaaditaan)"
 #define PCE_CDIMAGECACHE_INFO_0_FI "Lataa koko levykuva muistiin käynnistyksen yhteydessä. Voi mahdollisesti lyhentää latausaikoja kasvavan käynnistysajan kustannuksella."
 #define PCE_CDBIOS_LABEL_FI NULL
@@ -15859,35 +12917,6 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_FI,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_FI,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_FI },
-         { "always", OPTION_VAL_ALWAYS_FI },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_FI,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FI,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_FI,
       NULL,
@@ -15901,146 +12930,6 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_FI,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -16353,27 +13242,13 @@ struct retro_core_options_v2 options_fi = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_FR "Choisissez si la manette du port 4 doit avoir 2 ou 6 touches par défaut. Cette option n'est appliquée qu'au démarrage du cœur, si vous voulez changer de contenu lorsque du contenu est en cours d'exécution, utilisez la touche 'Mode Switch'. REMARQUE : Les manettes à 6 touches peuvent avoir des comportements bizarres dans des jeux non compatibles."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_FR "Type de manette par défaut pour le joueur 5"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_FR "Choisissez si la manette du port 5 doit avoir 2 ou 6 touches par défaut. Cette option n'est appliquée qu'au démarrage du cœur, si vous voulez changer de contenu lorsque du contenu est en cours d'exécution, utilisez la touche 'Mode Switch'. REMARQUE : Les manettes à 6 touches peuvent avoir des comportements bizarres dans des jeux non compatibles."
-#define PCE_TURBO_TOGGLING_LABEL_FR "Mode des touches de raccourci du turbo"
-#define PCE_TURBO_TOGGLING_INFO_0_FR "Activer les touches turbo. Les raccourcis (touches III et IV) peuvent se comporter comme des interrupteurs ou des touches turbo dédiées (maintenir enfoncées)."
 #define OPTION_VAL_TOGGLE_FR "Activer/désactiver"
 #define OPTION_VAL_ALWAYS_FR "Dédiées"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_FR "Touche de raccourci turbo alternative"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FR "Affecter les touches L3/R3 de la RetroManette comme raccourcis turbo au lieu des touches III et IV. Fonctionne uniquement en mode 'Activer/désactiver' et seulement tant que rien n'est assigné aux touches L3/R3. Vous pouvez éviter de remapper les touches III et IV lorsque vous passez en mode manette à 6 boutons avec cette option."
 #define PCE_TURBO_DELAY_LABEL_FR "Vitesse du turbo"
 #define PCE_TURBO_DELAY_INFO_0_FR "Choisir à quelle vitesse les touches sont répétées."
 #define OPTION_VAL_FAST_FR "Rapide"
 #define OPTION_VAL_MEDIUM_FR "Moyenne"
 #define OPTION_VAL_SLOW_FR "Lente"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_FR "J1 turbo I"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_FR "J1 turbo II"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_FR "J2 turbo I"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_FR "J2 turbo II"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_FR "J3 turbo I"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_FR "J3 turbo II"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_FR "J4 turbo I"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_FR "J4 turbo II"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_FR "J5 turbo I"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_FR "J5 turbo II"
 #define PCE_CDIMAGECACHE_LABEL_FR "Mise en cache des images CD (Redémarrage requis)"
 #define PCE_CDIMAGECACHE_INFO_0_FR "Charger l'image disque complète dans la mémoire au démarrage. Peut potentiellement diminuer le temps de chargement au prix d'une augmentation du temps de démarrage."
 #define PCE_CDBIOS_LABEL_FR "BIOS CD (Redémarrage requis)"
@@ -16815,35 +13690,6 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_FR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_FR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_FR },
-         { "always", OPTION_VAL_ALWAYS_FR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_FR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_FR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_FR,
       NULL,
@@ -16857,146 +13703,6 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_FR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -17309,27 +14015,13 @@ struct retro_core_options_v2 options_fr = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_GL "Escolla se o mando do porto 4 debe ter 2 ou 6 botóns por defecto. Esta opción só se aplica cando se inicia o núcleo, se queres cambiar mentres o contido está en execución, usa o botón \"Cambio de modo\". NOTA: O mando de 6 botóns pode ter comportamentos estraños en xogos non compatibles."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_GL "P5 Tipo de Joypad predeterminado"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_GL "Escolla se o mando do porto 5 debe ter 2 ou 6 botóns por defecto. Esta opción só se aplica cando se inicia o núcleo, se queres cambiar mentres o contido está en execución, usa o botón \"Cambio de modo\". NOTA: O mando de 6 botóns pode ter comportamentos estraños en xogos non compatibles."
-#define PCE_TURBO_TOGGLING_LABEL_GL "Modo de teclas rápidas Turbo"
-#define PCE_TURBO_TOGGLING_INFO_0_GL "Activa os botóns turbo. As teclas de acceso rápido (botóns III e IV) poden comportarse como interruptores de conmutación ou como botóns turbo dedicados (manteña para usar)."
 #define OPTION_VAL_TOGGLE_GL "Alternar"
 #define OPTION_VAL_ALWAYS_GL "Dedicado"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_GL "Tecla de acceso rápido Turbo alternativa"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_GL "Asigne os botóns L3/R3 de RetroPad como teclas de acceso rápido turbo en lugar dos botóns III e IV. Funciona só no modo \"Alterar\" e só sempre que non teña nada asignado aos botóns L3/R3. Con isto, pode evitar reasignar os botóns III e IV ao cambiar ao modo de controlador de 6 botóns."
 #define PCE_TURBO_DELAY_LABEL_GL "Velocidade turbo"
 #define PCE_TURBO_DELAY_INFO_0_GL "Escolla a rapidez con que se repiten as pulsacións dos botóns."
 #define OPTION_VAL_FAST_GL "Rápido"
 #define OPTION_VAL_MEDIUM_GL "Medio"
 #define OPTION_VAL_SLOW_GL "Lento"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_GL NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_GL NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_GL NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_GL NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_GL NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_GL NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_GL NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_GL NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_GL NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_GL NULL
 #define PCE_CDIMAGECACHE_LABEL_GL "Caché de imaxes de CD (necesario reiniciar)"
 #define PCE_CDIMAGECACHE_INFO_0_GL "Carga a imaxe completa na memoria ao iniciar. Pode diminuír os tempos de carga a costa dun aumento do tempo de inicio."
 #define PCE_CDBIOS_LABEL_GL "Bios do CD (reinicio necesario)"
@@ -17771,35 +14463,6 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_GL,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_GL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_GL },
-         { "always", OPTION_VAL_ALWAYS_GL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_GL,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_GL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_GL,
       NULL,
@@ -17813,146 +14476,6 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_GL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -18265,27 +14788,13 @@ struct retro_core_options_v2 options_gl = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_HE NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_HE NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_HE NULL
-#define PCE_TURBO_TOGGLING_LABEL_HE NULL
-#define PCE_TURBO_TOGGLING_INFO_0_HE NULL
 #define OPTION_VAL_TOGGLE_HE NULL
 #define OPTION_VAL_ALWAYS_HE NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_HE NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HE NULL
 #define PCE_TURBO_DELAY_LABEL_HE NULL
 #define PCE_TURBO_DELAY_INFO_0_HE NULL
 #define OPTION_VAL_FAST_HE NULL
 #define OPTION_VAL_MEDIUM_HE NULL
 #define OPTION_VAL_SLOW_HE NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_HE NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_HE NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_HE NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_HE NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_HE NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_HE NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_HE NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_HE NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_HE NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_HE NULL
 #define PCE_CDIMAGECACHE_LABEL_HE NULL
 #define PCE_CDIMAGECACHE_INFO_0_HE NULL
 #define PCE_CDBIOS_LABEL_HE NULL
@@ -18727,35 +15236,6 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_HE,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_HE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_HE },
-         { "always", OPTION_VAL_ALWAYS_HE },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_HE,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HE,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_HE,
       NULL,
@@ -18769,146 +15249,6 @@ struct retro_core_option_v2_definition option_defs_he[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_HE,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -19221,27 +15561,13 @@ struct retro_core_options_v2 options_he = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_HR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_HR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_HR NULL
-#define PCE_TURBO_TOGGLING_LABEL_HR NULL
-#define PCE_TURBO_TOGGLING_INFO_0_HR NULL
 #define OPTION_VAL_TOGGLE_HR NULL
 #define OPTION_VAL_ALWAYS_HR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_HR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HR NULL
 #define PCE_TURBO_DELAY_LABEL_HR NULL
 #define PCE_TURBO_DELAY_INFO_0_HR NULL
 #define OPTION_VAL_FAST_HR NULL
 #define OPTION_VAL_MEDIUM_HR NULL
 #define OPTION_VAL_SLOW_HR NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_HR NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_HR NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_HR NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_HR NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_HR NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_HR NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_HR NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_HR NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_HR NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_HR NULL
 #define PCE_CDIMAGECACHE_LABEL_HR NULL
 #define PCE_CDIMAGECACHE_INFO_0_HR NULL
 #define PCE_CDBIOS_LABEL_HR NULL
@@ -19683,35 +16009,6 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_HR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_HR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_HR },
-         { "always", OPTION_VAL_ALWAYS_HR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_HR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_HR,
       NULL,
@@ -19725,146 +16022,6 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_HR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -20177,27 +16334,13 @@ struct retro_core_options_v2 options_hr = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_HU "A 4. csatlakozó induláskor 2 vagy 6 gombos-e. Ez a beállítás csak a mag elindításakor jut érvényre, tartalom futtatása közben a \"Módváltás\" gomb használható. Figyelem: a 6 gombos joypadnak furcsa hatása lehet az azzal nem kompatibilis játékokra."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_HU "5. joypad alapértelmezett típusa"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_HU "Az 5. csatlakozó induláskor 2 vagy 6 gombos-e. Ez a beállítás csak a mag elindításakor jut érvényre, tartalom futtatása közben a \"Módváltás\" gomb használható. Figyelem: a 6 gombos joypadnak furcsa hatása lehet az azzal nem kompatibilis játékokra."
-#define PCE_TURBO_TOGGLING_LABEL_HU "Turbó gyorsgomb mód"
-#define PCE_TURBO_TOGGLING_INFO_0_HU "Turbó gombok engedélyezése. A gyorsgombok (III és IV) váltógombként vagy kijelölt (nyomva tartással használható) turbó gombként működhetnek."
 #define OPTION_VAL_TOGGLE_HU "Váltógomb"
 #define OPTION_VAL_ALWAYS_HU "Kijelölt"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_HU "Alternatív Turbo gyorsgomb"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HU "A III és IV gomb helyett a RetroPad L3/R3 gombjait rendeli a turbo átkapcsoláshoz. Csak Váltógomb módban, és akkor működik, ha nincs semmi az L3/R3 gombhoz rendelve. Ezzel elkerülhető a III és IV gomb átirányítása a 6-gombos kontroller módba kapcsoláskor."
 #define PCE_TURBO_DELAY_LABEL_HU "Turbó sebesség"
 #define PCE_TURBO_DELAY_INFO_0_HU "A gombnyomások ismétlésének gyorsasága."
 #define OPTION_VAL_FAST_HU "Gyors"
 #define OPTION_VAL_MEDIUM_HU "Közepes"
 #define OPTION_VAL_SLOW_HU "Lassú"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_HU NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_HU NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_HU NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_HU NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_HU NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_HU NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_HU NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_HU NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_HU NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_HU NULL
 #define PCE_CDIMAGECACHE_LABEL_HU "Gyorsítótár a CD képfájlhoz (újraindítás szükséges)"
 #define PCE_CDIMAGECACHE_INFO_0_HU "Indításkor beolvassa a teljes képfájlt a memóriába. Csökkentheti a töltési időket a lassabb indulásért cserébe."
 #define PCE_CDBIOS_LABEL_HU "CD BIOS (újraindítás szükséges)"
@@ -20639,35 +16782,6 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_HU,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_HU,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_HU },
-         { "always", OPTION_VAL_ALWAYS_HU },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_HU,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_HU,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_HU,
       NULL,
@@ -20681,146 +16795,6 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_HU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -21133,27 +17107,13 @@ struct retro_core_options_v2 options_hu = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_ID NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_ID NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_ID NULL
-#define PCE_TURBO_TOGGLING_LABEL_ID NULL
-#define PCE_TURBO_TOGGLING_INFO_0_ID NULL
 #define OPTION_VAL_TOGGLE_ID NULL
 #define OPTION_VAL_ALWAYS_ID NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_ID NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_ID NULL
 #define PCE_TURBO_DELAY_LABEL_ID "Kecepatan Bertubi"
 #define PCE_TURBO_DELAY_INFO_0_ID NULL
 #define OPTION_VAL_FAST_ID NULL
 #define OPTION_VAL_MEDIUM_ID NULL
 #define OPTION_VAL_SLOW_ID NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_ID NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_ID NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_ID NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_ID NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_ID NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_ID NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_ID NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_ID NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_ID NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_ID NULL
 #define PCE_CDIMAGECACHE_LABEL_ID "Tembolok Citra CD (Perlu Mulai Ulang)"
 #define PCE_CDIMAGECACHE_INFO_0_ID NULL
 #define PCE_CDBIOS_LABEL_ID "Bios CD (Perlu Mulai Ulang)"
@@ -21595,35 +17555,6 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_ID,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_ID,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_ID },
-         { "always", OPTION_VAL_ALWAYS_ID },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_ID,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_ID,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_ID,
       NULL,
@@ -21637,146 +17568,6 @@ struct retro_core_option_v2_definition option_defs_id[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_ID,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -22089,27 +17880,13 @@ struct retro_core_options_v2 options_id = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_IT "Scegli se la porta 4 joypad dovrebbe essere 2 o 6 pulsanti per impostazione predefinita. Questa opzione viene applicata solo quando il core si avvia, se si desidera passare mentre il contenuto è in esecuzione, utilizzare il pulsante 'Commutatore di modalità'. NOTA: 6 pulsanti joypad possono avere comportamenti strani in giochi non compatibili."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_IT "Tipo Joypad Predefinito P5"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_IT "Scegli se la porta 5 joypad dovrebbe essere 2 o 6 pulsanti per impostazione predefinita. Questa opzione viene applicata solo quando il core si avvia, se si desidera passare mentre il contenuto è in esecuzione, utilizzare il pulsante 'Commutatore di modalità'. NOTA: 6 pulsanti joypad possono avere comportamenti strani in giochi non compatibili."
-#define PCE_TURBO_TOGGLING_LABEL_IT "Modalità Scorciatoia Turbo"
-#define PCE_TURBO_TOGGLING_INFO_0_IT "Abilita i pulsanti turbo. I tasti di scelta rapida (pulsanti III e IV) possono comportarsi come interruttori o pulsanti turbo dedicati (tenere premuto per usare)."
 #define OPTION_VAL_TOGGLE_IT "Interrutore"
 #define OPTION_VAL_ALWAYS_IT "Dedicato"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_IT "Scorciatoia Turbo Alternativa"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_IT "Assegnare i pulsanti RetroPad's L3/R3 come tasti di scelta rapida turbo invece dei pulsanti III e IV. Funziona solo in modalità 'Interruttore' e solo finché non viene assegnato nulla ai pulsanti L3/R3. È possibile evitare di remapping i pulsanti III e IV quando si passa alla modalità controller a 6 pulsanti con questo."
 #define PCE_TURBO_DELAY_LABEL_IT "Velocità Turbo"
 #define PCE_TURBO_DELAY_INFO_0_IT "Scegli quanto velocemente vengono ripetute le pressioni dei pulsanti."
 #define OPTION_VAL_FAST_IT "Veloce"
 #define OPTION_VAL_MEDIUM_IT "Medio"
 #define OPTION_VAL_SLOW_IT "Lento"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_IT NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_IT NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_IT NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_IT NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_IT NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_IT NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_IT NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_IT NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_IT NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_IT NULL
 #define PCE_CDIMAGECACHE_LABEL_IT "Cache Immagine CD (Riavvio Richiesto)"
 #define PCE_CDIMAGECACHE_INFO_0_IT "Carica l'immagine completa in memoria all'avvio. Può potenzialmente diminuire i tempi di caricamento al costo di un aumento del tempo di avvio."
 #define PCE_CDBIOS_LABEL_IT "Bios Cd (Riavvio Richiesto)"
@@ -22551,35 +18328,6 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_IT,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_IT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_IT },
-         { "always", OPTION_VAL_ALWAYS_IT },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_IT,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_IT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_IT,
       NULL,
@@ -22593,146 +18341,6 @@ struct retro_core_option_v2_definition option_defs_it[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_IT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -23045,27 +18653,13 @@ struct retro_core_options_v2 options_it = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_JA "ポート 4 のジョイパッドをデフォルトで 2 または 6 ボタンにするかどうかを選択します。このオプションはコアの開始時にのみ適用されます。コンテンツの実行中に切り替えたい場合は、[モード切り替え] ボタンを使用してください。注意: 6 ボタンジョイパッドは互換性のないゲームで奇妙な動作をすることがあります。"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_JA "P5 デフォルトジョイパッドの種類"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_JA "ポート 5 のジョイパッドをデフォルトで 2 または 6 ボタンにするかどうかを選択します。このオプションはコアの開始時にのみ適用されます。コンテンツの実行中に切り替えたい場合は、[モード切り替え] ボタンを使用してください。注意: 6 ボタンジョイパッドは互換性のないゲームで奇妙な動作をすることがあります。"
-#define PCE_TURBO_TOGGLING_LABEL_JA "ターボホットキーモード"
-#define PCE_TURBO_TOGGLING_INFO_0_JA "ターボボタンを有効にします。ホットキー (ボタン III と IV) は、通常レトロパッドの A/B ボタンに割り当てられる ボタン I および ボタン II のターボのオン/オフ、またはボタン I/II の専用ターボボタンとして動作します。"
 #define OPTION_VAL_TOGGLE_JA "切り替え"
 #define OPTION_VAL_ALWAYS_JA "長押し"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_JA "代替ターボホットキー"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_JA "ボタン III と IV ではなく、レトロパッドの L3/R3 ボタンにターボホットキーを割り当てます。 [切り替え] モードかつ、L3/R3 に何も割り当てられていない場合にのみ動作します。これにより、6 ボタンコントローラーモードに切り替えた際、ボタン II および IV へのリマップを回避することができます。"
 #define PCE_TURBO_DELAY_LABEL_JA "ターボ速度"
 #define PCE_TURBO_DELAY_INFO_0_JA "ボタンの連続入力の速さを選択します。"
 #define OPTION_VAL_FAST_JA "高速"
 #define OPTION_VAL_MEDIUM_JA "中"
 #define OPTION_VAL_SLOW_JA "遅い"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_JA "P1 ターボ I"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_JA "P1 ターボ II"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_JA "P2 ターボ I"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_JA "P2 ターボ II"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_JA "P3 ターボ I"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_JA "P3 ターボ II"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_JA "P4 ターボ I"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_JA "P4 ターボ II"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_JA "P5 ターボ I"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_JA "P5 ターボ II"
 #define PCE_CDIMAGECACHE_LABEL_JA "CD イメージキャッシュ (再起動が必要)"
 #define PCE_CDIMAGECACHE_INFO_0_JA "起動時に完全なイメージをメモリにロードします。起動時間が増す代わりにロード時間が短縮される可能性があります。"
 #define PCE_CDBIOS_LABEL_JA "CD BIOS (再起動が必要)"
@@ -23507,35 +19101,6 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_JA,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_JA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_JA },
-         { "always", OPTION_VAL_ALWAYS_JA },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_JA,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_JA,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_JA,
       NULL,
@@ -23549,146 +19114,6 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_JA,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -24001,27 +19426,13 @@ struct retro_core_options_v2 options_ja = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_KO "포트 4 조이패드를 기본적으로 2개 또는 6개 버튼으로 할지 선택합니다. 이 옵션은 코어가 시작될 때만 적용되며, 콘텐츠가 실행 중일 때 전환하려면 '모드 전환' 버튼을 사용하세요. 참고: 6버튼 조이패드는 호환되지 않는 게임에서 이상한 동작을 일으킬 수 있습니다."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_KO "P5 기본 조이패드 유형"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_KO "포트 5 조이패드를 기본적으로 2개 또는 6개 버튼으로 할지 선택합니다. 이 옵션은 코어가 시작될 때만 적용되며, 콘텐츠가 실행 중일 때 전환하려면 '모드 전환' 버튼을 사용하세요. 참고: 6버튼 조이패드는 호환되지 않는 게임에서 이상한 동작을 일으킬 수 있습니다."
-#define PCE_TURBO_TOGGLING_LABEL_KO "터포 핫키 모드"
-#define PCE_TURBO_TOGGLING_INFO_0_KO "터보 버튼을 활성화합니다. 핫키(버튼 III 및 IV)는 토글 스위치 또는 전용(길게 눌러 사용) 터보 버튼으로 작동할 수 있습니다."
 #define OPTION_VAL_TOGGLE_KO "토글"
 #define OPTION_VAL_ALWAYS_KO "전용"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_KO "대체 터보 핫키"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_KO "레트로 패드의 L3/R3 버튼을 버튼 III 및 IV 대신 터보 핫키로 할당합니다. '토글' 모드에서 L3/R3 버튼에 아무 것도 할당되지 않은 경우에만 작동합니다. 이를 통해 6버튼 컨트롤러 모드로 전환할 때 버튼 III 및 IV를 다시 설정해야하는 것을 방지할 수 있습니다."
 #define PCE_TURBO_DELAY_LABEL_KO "터보 속도"
 #define PCE_TURBO_DELAY_INFO_0_KO "버튼 연사 속도를 선택합니다."
 #define OPTION_VAL_FAST_KO "빠르게"
 #define OPTION_VAL_MEDIUM_KO "중간"
 #define OPTION_VAL_SLOW_KO "느리게"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_KO "P1 터보 I"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_KO "P1 터보 II"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_KO "P2 터보 I"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_KO "P2 터보 II"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_KO "P3 터보 I"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_KO "P3 터보 II"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_KO "P4 터보 I"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_KO "P4 터보 II"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_KO "P5 터보 I"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_KO "P5 터보 II"
 #define PCE_CDIMAGECACHE_LABEL_KO "CD 이미지 캐시 (재시작 필요)"
 #define PCE_CDIMAGECACHE_INFO_0_KO "시작할 때 전체 이미지를 메모리에 불러옵니다. 시작 시간이 늘어나는 대신 로딩 시간을 잠재적으로 줄일 수 있습니다."
 #define PCE_CDBIOS_LABEL_KO "CD BIOS (재시작 필요)"
@@ -24463,35 +19874,6 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_KO,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_KO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_KO },
-         { "always", OPTION_VAL_ALWAYS_KO },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_KO,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_KO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_KO,
       NULL,
@@ -24505,146 +19887,6 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_KO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -24957,27 +20199,13 @@ struct retro_core_options_v2 options_ko = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_NL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_NL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_NL NULL
-#define PCE_TURBO_TOGGLING_LABEL_NL NULL
-#define PCE_TURBO_TOGGLING_INFO_0_NL NULL
 #define OPTION_VAL_TOGGLE_NL NULL
 #define OPTION_VAL_ALWAYS_NL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_NL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_NL NULL
 #define PCE_TURBO_DELAY_LABEL_NL NULL
 #define PCE_TURBO_DELAY_INFO_0_NL NULL
 #define OPTION_VAL_FAST_NL NULL
 #define OPTION_VAL_MEDIUM_NL NULL
 #define OPTION_VAL_SLOW_NL NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_NL NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_NL NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_NL NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_NL NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_NL NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_NL NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_NL NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_NL NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_NL NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_NL NULL
 #define PCE_CDIMAGECACHE_LABEL_NL NULL
 #define PCE_CDIMAGECACHE_INFO_0_NL NULL
 #define PCE_CDBIOS_LABEL_NL NULL
@@ -25419,35 +20647,6 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_NL,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_NL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_NL },
-         { "always", OPTION_VAL_ALWAYS_NL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_NL,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_NL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_NL,
       NULL,
@@ -25461,146 +20660,6 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_NL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -25913,27 +20972,13 @@ struct retro_core_options_v2 options_nl = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_NO NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_NO NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_NO NULL
-#define PCE_TURBO_TOGGLING_LABEL_NO NULL
-#define PCE_TURBO_TOGGLING_INFO_0_NO NULL
 #define OPTION_VAL_TOGGLE_NO NULL
 #define OPTION_VAL_ALWAYS_NO NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_NO NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_NO NULL
 #define PCE_TURBO_DELAY_LABEL_NO NULL
 #define PCE_TURBO_DELAY_INFO_0_NO NULL
 #define OPTION_VAL_FAST_NO NULL
 #define OPTION_VAL_MEDIUM_NO NULL
 #define OPTION_VAL_SLOW_NO NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_NO NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_NO NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_NO NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_NO NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_NO NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_NO NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_NO NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_NO NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_NO NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_NO NULL
 #define PCE_CDIMAGECACHE_LABEL_NO NULL
 #define PCE_CDIMAGECACHE_INFO_0_NO NULL
 #define PCE_CDBIOS_LABEL_NO NULL
@@ -26375,35 +21420,6 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_NO,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_NO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_NO },
-         { "always", OPTION_VAL_ALWAYS_NO },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_NO,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_NO,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_NO,
       NULL,
@@ -26417,146 +21433,6 @@ struct retro_core_option_v2_definition option_defs_no[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_NO,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -26869,27 +21745,13 @@ struct retro_core_options_v2 options_no = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_OR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_OR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_OR NULL
-#define PCE_TURBO_TOGGLING_LABEL_OR NULL
-#define PCE_TURBO_TOGGLING_INFO_0_OR NULL
 #define OPTION_VAL_TOGGLE_OR NULL
 #define OPTION_VAL_ALWAYS_OR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_OR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_OR NULL
 #define PCE_TURBO_DELAY_LABEL_OR NULL
 #define PCE_TURBO_DELAY_INFO_0_OR NULL
 #define OPTION_VAL_FAST_OR NULL
 #define OPTION_VAL_MEDIUM_OR NULL
 #define OPTION_VAL_SLOW_OR NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_OR NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_OR NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_OR NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_OR NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_OR NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_OR NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_OR NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_OR NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_OR NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_OR NULL
 #define PCE_CDIMAGECACHE_LABEL_OR NULL
 #define PCE_CDIMAGECACHE_INFO_0_OR NULL
 #define PCE_CDBIOS_LABEL_OR NULL
@@ -27331,35 +22193,6 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_OR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_OR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_OR },
-         { "always", OPTION_VAL_ALWAYS_OR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_OR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_OR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_OR,
       NULL,
@@ -27373,146 +22206,6 @@ struct retro_core_option_v2_definition option_defs_or[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_OR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -27825,27 +22518,13 @@ struct retro_core_options_v2 options_or = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_PL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_PL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_PL NULL
-#define PCE_TURBO_TOGGLING_LABEL_PL NULL
-#define PCE_TURBO_TOGGLING_INFO_0_PL NULL
 #define OPTION_VAL_TOGGLE_PL "Przełącz"
 #define OPTION_VAL_ALWAYS_PL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_PL "Alternatywny skrót Turbo"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PL NULL
 #define PCE_TURBO_DELAY_LABEL_PL "Turbo Prędkość"
 #define PCE_TURBO_DELAY_INFO_0_PL NULL
 #define OPTION_VAL_FAST_PL "Szybkie"
 #define OPTION_VAL_MEDIUM_PL "Średni"
 #define OPTION_VAL_SLOW_PL "Powolny"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_PL NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_PL NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_PL NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_PL NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_PL NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_PL NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_PL NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_PL NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_PL NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_PL NULL
 #define PCE_CDIMAGECACHE_LABEL_PL NULL
 #define PCE_CDIMAGECACHE_INFO_0_PL NULL
 #define PCE_CDBIOS_LABEL_PL NULL
@@ -28287,35 +22966,6 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_PL,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_PL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_PL },
-         { "always", OPTION_VAL_ALWAYS_PL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_PL,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_PL,
       NULL,
@@ -28329,146 +22979,6 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_PL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -28781,27 +23291,13 @@ struct retro_core_options_v2 options_pl = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_PT_BR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_PT_BR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_PT_BR NULL
-#define PCE_TURBO_TOGGLING_LABEL_PT_BR "Modo de atalho do turbo"
-#define PCE_TURBO_TOGGLING_INFO_0_PT_BR "Habilita os botões turbo. Os atalhos (botões III e IV) podem comportar-se como interruptores ou como botões dedicados (segure para usar)."
 #define OPTION_VAL_TOGGLE_PT_BR "Interruptor"
 #define OPTION_VAL_ALWAYS_PT_BR "Dedicado"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_PT_BR "Atalho alternativo do turbo"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PT_BR "Atribui os botões L3 e R3 do RetroPad como atalhos do turbo, em vez dos botões III e IV. Somente funciona no modo interruptor e enquanto não tiver outras atribuições aos botões L3 e R3. Você pode evitar o remapeamento dos botões III e IV ao alterar para o modo de controle de 6 botões com isso."
 #define PCE_TURBO_DELAY_LABEL_PT_BR "Velocidade do turbo"
 #define PCE_TURBO_DELAY_INFO_0_PT_BR "Define a taxa de repetição dos botões pressionados."
 #define OPTION_VAL_FAST_PT_BR "Rápida"
 #define OPTION_VAL_MEDIUM_PT_BR "Média"
 #define OPTION_VAL_SLOW_PT_BR "Lenta"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_PT_BR "Turbo I do J1"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_PT_BR "Turbo II do J1"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_PT_BR "Turbo I do J2"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_PT_BR "Turbo II do J2"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_PT_BR "Turbo I do J3"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_PT_BR "Turbo II do J3"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_PT_BR "Turbo I do J4"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_PT_BR "Turbo II do J4"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_PT_BR "Turbo I do J5"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_PT_BR "Turbo II do J5"
 #define PCE_CDIMAGECACHE_LABEL_PT_BR "Cache de imagens do CD (requer reinício)"
 #define PCE_CDIMAGECACHE_INFO_0_PT_BR "Carrega a imagem completa na memória na inicialização. Eventualmente, pode diminuir o tempo de carregamento ao custo de um tempo de inicialização maior."
 #define PCE_CDBIOS_LABEL_PT_BR "BIOS de CD (requer reinício)"
@@ -29243,35 +23739,6 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_PT_BR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_PT_BR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_PT_BR },
-         { "always", OPTION_VAL_ALWAYS_PT_BR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_PT_BR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PT_BR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_PT_BR,
       NULL,
@@ -29285,146 +23752,6 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_PT_BR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -29737,27 +24064,13 @@ struct retro_core_options_v2 options_pt_br = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_PT_PT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_PT_PT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_PT_PT NULL
-#define PCE_TURBO_TOGGLING_LABEL_PT_PT NULL
-#define PCE_TURBO_TOGGLING_INFO_0_PT_PT NULL
 #define OPTION_VAL_TOGGLE_PT_PT NULL
 #define OPTION_VAL_ALWAYS_PT_PT NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_PT_PT NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PT_PT NULL
 #define PCE_TURBO_DELAY_LABEL_PT_PT NULL
 #define PCE_TURBO_DELAY_INFO_0_PT_PT NULL
 #define OPTION_VAL_FAST_PT_PT NULL
 #define OPTION_VAL_MEDIUM_PT_PT NULL
 #define OPTION_VAL_SLOW_PT_PT NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_PT_PT NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_PT_PT NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_PT_PT NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_PT_PT NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_PT_PT NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_PT_PT NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_PT_PT NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_PT_PT NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_PT_PT NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_PT_PT NULL
 #define PCE_CDIMAGECACHE_LABEL_PT_PT "Cache da Imagem do CD (Reinicialização necessária)"
 #define PCE_CDIMAGECACHE_INFO_0_PT_PT NULL
 #define PCE_CDBIOS_LABEL_PT_PT NULL
@@ -30199,35 +24512,6 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_PT_PT,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_PT_PT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_PT_PT },
-         { "always", OPTION_VAL_ALWAYS_PT_PT },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_PT_PT,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_PT_PT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_PT_PT,
       NULL,
@@ -30241,146 +24525,6 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_PT_PT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -30693,27 +24837,13 @@ struct retro_core_options_v2 options_pt_pt = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_RU "Выбор 2- или 6-ти кнопочного контроллера по умолчанию для порта 4. Данная опция применяется только при запуске ядра. Для переключения на лету используйте кнопку 'Сменить режим'. ВНИМАНИЕ: в несовместимых играх 6-кнопочный геймпад может вызывать баги управления."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_RU "Тип джойстика Игрока 5"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_RU "Выбор 2- или 6-ти кнопочного контроллера по умолчанию для порта 5. Данная опция применяется только при запуске ядра. Для переключения на лету используйте кнопку 'Сменить режим'. ВНИМАНИЕ: в несовместимых играх 6-кнопочный геймпад может вызывать баги управления."
-#define PCE_TURBO_TOGGLING_LABEL_RU "Режим турбо-кнопок"
-#define PCE_TURBO_TOGGLING_INFO_0_RU "Включение турбо-кнопок. Активаторы (кнопки III и IV) могут работать как переключатели или как выделенные кнопки, включаемые при удержании."
 #define OPTION_VAL_TOGGLE_RU "Переключатели"
 #define OPTION_VAL_ALWAYS_RU "Выделенные"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_RU "Альтернативное включение турбо"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_RU "Назначает для включения турбо кнопки RetroPad L3/R3 вместо кнопок III и IV. Работает только с режимом 'Переключение' и при условии, что кнопки L3/R3 не используются для других действий. Позволяет избежать перепривязки кнопок III и IV при включении 6-кнопочного режима."
 #define PCE_TURBO_DELAY_LABEL_RU "Скорость турбо"
 #define PCE_TURBO_DELAY_INFO_0_RU "Выбор скорости повтора при нажатии кнопок."
 #define OPTION_VAL_FAST_RU "Высокая"
 #define OPTION_VAL_MEDIUM_RU "Средняя"
 #define OPTION_VAL_SLOW_RU "Низкая"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_RU "Игрок 1 Турбо I"
-#define PCE_P0_TURBO_II_ENABLE_LABEL_RU "Игрок 1 Турбо II"
-#define PCE_P1_TURBO_I_ENABLE_LABEL_RU "Игрок 2 Турбо I"
-#define PCE_P1_TURBO_II_ENABLE_LABEL_RU "Игрок 2 Турбо II"
-#define PCE_P2_TURBO_I_ENABLE_LABEL_RU "Игрок 3 Турбо I"
-#define PCE_P2_TURBO_II_ENABLE_LABEL_RU "Игрок 3 Турбо II"
-#define PCE_P3_TURBO_I_ENABLE_LABEL_RU "Игрок 4 Турбо I"
-#define PCE_P3_TURBO_II_ENABLE_LABEL_RU "Игрок 4 Турбо II"
-#define PCE_P4_TURBO_I_ENABLE_LABEL_RU "Игрок 5 Турбо I"
-#define PCE_P4_TURBO_II_ENABLE_LABEL_RU "Игрок 5 Турбо II"
 #define PCE_CDIMAGECACHE_LABEL_RU "Кэшировать образ CD (требуется перезапуск)"
 #define PCE_CDIMAGECACHE_INFO_0_RU "При запуске образ диска полностью загружается в память. Ускоряет загрузки, но увеличивает время запуска."
 #define PCE_CDBIOS_LABEL_RU "BIOS CD (требуется перезапуск)"
@@ -31155,35 +25285,6 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_RU,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_RU,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_RU },
-         { "always", OPTION_VAL_ALWAYS_RU },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_RU,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_RU,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_RU,
       NULL,
@@ -31197,146 +25298,6 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_RU,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -31649,27 +25610,13 @@ struct retro_core_options_v2 options_ru = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_SK NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_SK NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_SK NULL
-#define PCE_TURBO_TOGGLING_LABEL_SK NULL
-#define PCE_TURBO_TOGGLING_INFO_0_SK NULL
 #define OPTION_VAL_TOGGLE_SK "Prepnúť"
 #define OPTION_VAL_ALWAYS_SK "Vyhradené"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_SK NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SK NULL
 #define PCE_TURBO_DELAY_LABEL_SK "Turbo rýchlosť"
 #define PCE_TURBO_DELAY_INFO_0_SK NULL
 #define OPTION_VAL_FAST_SK "Rýchlo"
 #define OPTION_VAL_MEDIUM_SK "Stredné"
 #define OPTION_VAL_SLOW_SK "Pomalé"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_SK NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_SK NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_SK NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_SK NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_SK NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_SK NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_SK NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_SK NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_SK NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_SK NULL
 #define PCE_CDIMAGECACHE_LABEL_SK NULL
 #define PCE_CDIMAGECACHE_INFO_0_SK NULL
 #define PCE_CDBIOS_LABEL_SK NULL
@@ -32111,35 +26058,6 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_SK,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_SK,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_SK },
-         { "always", OPTION_VAL_ALWAYS_SK },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_SK,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SK,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_SK,
       NULL,
@@ -32153,146 +26071,6 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_SK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -32605,27 +26383,13 @@ struct retro_core_options_v2 options_sk = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_SR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_SR NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_SR NULL
-#define PCE_TURBO_TOGGLING_LABEL_SR NULL
-#define PCE_TURBO_TOGGLING_INFO_0_SR NULL
 #define OPTION_VAL_TOGGLE_SR NULL
 #define OPTION_VAL_ALWAYS_SR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_SR NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SR NULL
 #define PCE_TURBO_DELAY_LABEL_SR NULL
 #define PCE_TURBO_DELAY_INFO_0_SR NULL
 #define OPTION_VAL_FAST_SR NULL
 #define OPTION_VAL_MEDIUM_SR NULL
 #define OPTION_VAL_SLOW_SR NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_SR NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_SR NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_SR NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_SR NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_SR NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_SR NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_SR NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_SR NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_SR NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_SR NULL
 #define PCE_CDIMAGECACHE_LABEL_SR NULL
 #define PCE_CDIMAGECACHE_INFO_0_SR NULL
 #define PCE_CDBIOS_LABEL_SR NULL
@@ -33067,35 +26831,6 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_SR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_SR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_SR },
-         { "always", OPTION_VAL_ALWAYS_SR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_SR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_SR,
       NULL,
@@ -33109,146 +26844,6 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_SR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -33561,27 +27156,13 @@ struct retro_core_options_v2 options_sr = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_SV "Välj detta ifall port 4-joypaden ska vara 2-knappars eller 6-knappars som standard. Denna inställning tillämpas endast när kärnan startar. Om du vill byta under tiden innehållet körs, använd \"Lägesväxlings\"-knappen. OBS!: 6-knappars joypaden kan visa konstigt beteende i inkompatibla spel."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_SV "Standard joypad-typ för spelare 5 (P5)"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_SV "Välj detta ifall port 5-joypaden ska vara 2-knappars eller 6-knappars som standard. Denna inställning tillämpas endast när kärnan startar. Om du vill byta under tiden innehållet körs, använd \"Lägesväxlings\"-knappen. OBS!: 6-knappars joypaden kan visa konstigt beteende i inkompatibla spel."
-#define PCE_TURBO_TOGGLING_LABEL_SV "Turbo snabbtangent-läge"
-#define PCE_TURBO_TOGGLING_INFO_0_SV "Aktivera turboknappar. Snabbtangenter (knapparna III och IV) kan bete sig som antingen växla eller dedikerade (håll för att använda) turboknappar."
 #define OPTION_VAL_TOGGLE_SV "Växla"
 #define OPTION_VAL_ALWAYS_SV "Dedikerad"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_SV "Alternativ snabbtangent för turbo"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SV "Tilldela RetroPads L3/R3-knappar som snabbtangenter för turbo-läge istället för knappar III och IV. Fungerar endast i \"Växel\"-läget och endast så länge inget är tilldelat L3/R3-knapparna. Du kan undvika omkartläggning av knappar III och IV när du växlar till 6-knapps kontrollläge med detta."
 #define PCE_TURBO_DELAY_LABEL_SV "Turbo-hastighet"
 #define PCE_TURBO_DELAY_INFO_0_SV "Välj hur snabbt knapptryckningar upprepas."
 #define OPTION_VAL_FAST_SV "Snabb"
 #define OPTION_VAL_MEDIUM_SV NULL
 #define OPTION_VAL_SLOW_SV "Långsam"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_SV NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_SV NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_SV NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_SV NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_SV NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_SV NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_SV NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_SV NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_SV NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_SV NULL
 #define PCE_CDIMAGECACHE_LABEL_SV "Skivavbildningscache (omstart krävs)"
 #define PCE_CDIMAGECACHE_INFO_0_SV "Ladda in hela avbilden i minnet vid start. Kan potentiellt minska laddningstiderna till förmån för en ökad starttid."
 #define PCE_CDBIOS_LABEL_SV "CD-BIOS (Omstart krävs)"
@@ -34023,35 +27604,6 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_SV,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_SV,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_SV },
-         { "always", OPTION_VAL_ALWAYS_SV },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_SV,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_SV,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_SV,
       NULL,
@@ -34065,146 +27617,6 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_SV,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -34517,27 +27929,13 @@ struct retro_core_options_v2 options_sv = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_TR "Port 4 joypad varsayılan olarak 2 veya 6 düğme olması gerekip gerekmediğini seçin. Bu seçenek yalnızca çekirdek başladığında uygulanır, içerik çalışırken geçiş yapmak istiyorsanız, 'Mod Değiştir' düğmesini kullanın. NOT: 6 düğmeli joypad, uyumlu olmayan oyunlarda garip davranışlara sahip olabilir."
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_TR "P5 Varsayılan Joypad Tipi"
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_TR "Port 5 joypad varsayılan olarak 2 veya 6 düğme olması gerekip gerekmediğini seçin. Bu seçenek yalnızca çekirdek başladığında uygulanır, içerik çalışırken geçiş yapmak istiyorsanız, 'Mod Değiştir' düğmesini kullanın. NOT: 6 düğmeli joypad, uyumlu olmayan oyunlarda garip davranışlara sahip olabilir."
-#define PCE_TURBO_TOGGLING_LABEL_TR "Turbo Kısayol Tuşu Kipi"
-#define PCE_TURBO_TOGGLING_INFO_0_TR "Turbo düğmelerini etkinleştirin. Kısayol tuşları (düğmeler III ve IV), geçiş anahtarı veya özel (kullanmak için basılı tutun) turbo düğmeleri gibi davranabilir."
 #define OPTION_VAL_TOGGLE_TR "Değiştir"
 #define OPTION_VAL_ALWAYS_TR "Atanmış"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_TR "Alternatif Turbo Kısayol Tuşu"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_TR "RetroPad L3/R3 düğmelerini III ve IV düğmeleri yerine turbo kısayol tuşları olarak atayın. Yalnızca 'Geçiş' kipinde ve L3/R3 düğmelerine hiçbir şey atanmadığı sürece çalışır. Bununla 6 düğmeli denetleyici kipine geçerken III ve IV düğmelerinin yeniden eşlenmesini önleyebilirsiniz."
 #define PCE_TURBO_DELAY_LABEL_TR "Turbo Hızı"
 #define PCE_TURBO_DELAY_INFO_0_TR "Düğmelere ne kadar hızlı basılacağını seçin."
 #define OPTION_VAL_FAST_TR "Hızlı"
 #define OPTION_VAL_MEDIUM_TR "Orta"
 #define OPTION_VAL_SLOW_TR "Yavaş"
-#define PCE_P0_TURBO_I_ENABLE_LABEL_TR NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_TR NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_TR NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_TR NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_TR NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_TR NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_TR NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_TR NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_TR NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_TR NULL
 #define PCE_CDIMAGECACHE_LABEL_TR "CD Kalıbı Önbelleği (Yeniden Başlatılmalı)"
 #define PCE_CDIMAGECACHE_INFO_0_TR "Başlangıç sırasında bütün kalıbı hafızaya yükler. Başlangıç sürecini uzatmak pahasına oyundaki yüklenme sürelerini kısaltabilir."
 #define PCE_CDBIOS_LABEL_TR "CD Bios (Yeniden Başlatılmalı)"
@@ -34979,35 +28377,6 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_TR,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_TR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_TR },
-         { "always", OPTION_VAL_ALWAYS_TR },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_TR,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_TR,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_TR,
       NULL,
@@ -35021,146 +28390,6 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_TR,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -35473,27 +28702,13 @@ struct retro_core_options_v2 options_tr = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_TT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_TT NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_TT NULL
-#define PCE_TURBO_TOGGLING_LABEL_TT NULL
-#define PCE_TURBO_TOGGLING_INFO_0_TT NULL
 #define OPTION_VAL_TOGGLE_TT NULL
 #define OPTION_VAL_ALWAYS_TT NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_TT NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_TT NULL
 #define PCE_TURBO_DELAY_LABEL_TT NULL
 #define PCE_TURBO_DELAY_INFO_0_TT NULL
 #define OPTION_VAL_FAST_TT NULL
 #define OPTION_VAL_MEDIUM_TT NULL
 #define OPTION_VAL_SLOW_TT NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_TT NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_TT NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_TT NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_TT NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_TT NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_TT NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_TT NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_TT NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_TT NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_TT NULL
 #define PCE_CDIMAGECACHE_LABEL_TT NULL
 #define PCE_CDIMAGECACHE_INFO_0_TT NULL
 #define PCE_CDBIOS_LABEL_TT NULL
@@ -35935,35 +29150,6 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_TT,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_TT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_TT },
-         { "always", OPTION_VAL_ALWAYS_TT },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_TT,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_TT,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_TT,
       NULL,
@@ -35977,146 +29163,6 @@ struct retro_core_option_v2_definition option_defs_tt[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_TT,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -36429,27 +29475,13 @@ struct retro_core_options_v2 options_tt = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_UK NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_UK NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_UK NULL
-#define PCE_TURBO_TOGGLING_LABEL_UK "Турборежим гарячих клавіш"
-#define PCE_TURBO_TOGGLING_INFO_0_UK "Увімкнути турбокнопки. Гарячі клавіші (кнопки III та IV) можуть поводити себе як перемикачі або виділені (утримування) турбокнопки."
 #define OPTION_VAL_TOGGLE_UK "Перемикач"
 #define OPTION_VAL_ALWAYS_UK "Виділений"
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_UK "Альтернативні турбокнопки"
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_UK NULL
 #define PCE_TURBO_DELAY_LABEL_UK NULL
 #define PCE_TURBO_DELAY_INFO_0_UK NULL
 #define OPTION_VAL_FAST_UK "Швидко"
 #define OPTION_VAL_MEDIUM_UK NULL
 #define OPTION_VAL_SLOW_UK NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_UK NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_UK NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_UK NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_UK NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_UK NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_UK NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_UK NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_UK NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_UK NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_UK NULL
 #define PCE_CDIMAGECACHE_LABEL_UK "Кеш образу CD (потрібен перезапуск)"
 #define PCE_CDIMAGECACHE_INFO_0_UK "Завантажувати повне зображення в пам'ять під час запуску. Може зменшувати час завантаження за рахунок збільшення часу запуску."
 #define PCE_CDBIOS_LABEL_UK NULL
@@ -36891,35 +29923,6 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_UK,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_UK,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_UK },
-         { "always", OPTION_VAL_ALWAYS_UK },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_UK,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_UK,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_UK,
       NULL,
@@ -36933,146 +29936,6 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_UK,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -37385,27 +30248,13 @@ struct retro_core_options_v2 options_uk = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_VAL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_VAL NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_VAL NULL
-#define PCE_TURBO_TOGGLING_LABEL_VAL NULL
-#define PCE_TURBO_TOGGLING_INFO_0_VAL NULL
 #define OPTION_VAL_TOGGLE_VAL NULL
 #define OPTION_VAL_ALWAYS_VAL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_VAL NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_VAL NULL
 #define PCE_TURBO_DELAY_LABEL_VAL NULL
 #define PCE_TURBO_DELAY_INFO_0_VAL NULL
 #define OPTION_VAL_FAST_VAL NULL
 #define OPTION_VAL_MEDIUM_VAL NULL
 #define OPTION_VAL_SLOW_VAL NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_VAL NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_VAL NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_VAL NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_VAL NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_VAL NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_VAL NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_VAL NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_VAL NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_VAL NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_VAL NULL
 #define PCE_CDIMAGECACHE_LABEL_VAL NULL
 #define PCE_CDIMAGECACHE_INFO_0_VAL NULL
 #define PCE_CDBIOS_LABEL_VAL NULL
@@ -37847,35 +30696,6 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_VAL,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_VAL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_VAL },
-         { "always", OPTION_VAL_ALWAYS_VAL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_VAL,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_VAL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_VAL,
       NULL,
@@ -37889,146 +30709,6 @@ struct retro_core_option_v2_definition option_defs_val[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_VAL,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
@@ -38341,27 +31021,13 @@ struct retro_core_options_v2 options_val = {
 #define PCE_DEFAULT_JOYPAD_TYPE_P4_INFO_0_VN NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_LABEL_VN NULL
 #define PCE_DEFAULT_JOYPAD_TYPE_P5_INFO_0_VN NULL
-#define PCE_TURBO_TOGGLING_LABEL_VN NULL
-#define PCE_TURBO_TOGGLING_INFO_0_VN NULL
 #define OPTION_VAL_TOGGLE_VN NULL
 #define OPTION_VAL_ALWAYS_VN NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_LABEL_VN NULL
-#define PCE_TURBO_TOGGLE_HOTKEY_INFO_0_VN NULL
 #define PCE_TURBO_DELAY_LABEL_VN NULL
 #define PCE_TURBO_DELAY_INFO_0_VN NULL
 #define OPTION_VAL_FAST_VN NULL
 #define OPTION_VAL_MEDIUM_VN NULL
 #define OPTION_VAL_SLOW_VN NULL
-#define PCE_P0_TURBO_I_ENABLE_LABEL_VN NULL
-#define PCE_P0_TURBO_II_ENABLE_LABEL_VN NULL
-#define PCE_P1_TURBO_I_ENABLE_LABEL_VN NULL
-#define PCE_P1_TURBO_II_ENABLE_LABEL_VN NULL
-#define PCE_P2_TURBO_I_ENABLE_LABEL_VN NULL
-#define PCE_P2_TURBO_II_ENABLE_LABEL_VN NULL
-#define PCE_P3_TURBO_I_ENABLE_LABEL_VN NULL
-#define PCE_P3_TURBO_II_ENABLE_LABEL_VN NULL
-#define PCE_P4_TURBO_I_ENABLE_LABEL_VN NULL
-#define PCE_P4_TURBO_II_ENABLE_LABEL_VN NULL
 #define PCE_CDIMAGECACHE_LABEL_VN NULL
 #define PCE_CDIMAGECACHE_INFO_0_VN NULL
 #define PCE_CDBIOS_LABEL_VN NULL
@@ -38803,35 +31469,6 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       "2 Buttons"
    },
    {
-      "pce_Turbo_Toggling",
-      PCE_TURBO_TOGGLING_LABEL_VN,
-      NULL,
-      PCE_TURBO_TOGGLING_INFO_0_VN,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "toggle", OPTION_VAL_TOGGLE_VN },
-         { "always", OPTION_VAL_ALWAYS_VN },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_turbo_toggle_hotkey",
-      PCE_TURBO_TOGGLE_HOTKEY_LABEL_VN,
-      NULL,
-      PCE_TURBO_TOGGLE_HOTKEY_INFO_0_VN,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
       "pce_Turbo_Delay",
       PCE_TURBO_DELAY_LABEL_VN,
       NULL,
@@ -38845,146 +31482,6 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
          { NULL, NULL},
       },
       "Fast"
-   },
-   {
-      "pce_p0_turbo_I_enable",
-      PCE_P0_TURBO_I_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p0_turbo_II_enable",
-      PCE_P0_TURBO_II_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_I_enable",
-      PCE_P1_TURBO_I_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p1_turbo_II_enable",
-      PCE_P1_TURBO_II_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_I_enable",
-      PCE_P2_TURBO_I_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p2_turbo_II_enable",
-      PCE_P2_TURBO_II_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_I_enable",
-      PCE_P3_TURBO_I_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p3_turbo_II_enable",
-      PCE_P3_TURBO_II_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_I_enable",
-      PCE_P4_TURBO_I_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
-   },
-   {
-      "pce_p4_turbo_II_enable",
-      PCE_P4_TURBO_II_ENABLE_LABEL_VN,
-      NULL,
-      NULL,
-      NULL,
-      "input",
-      {
-         { "disabled", NULL },
-         { "enabled", NULL },
-         { NULL, NULL},
-      },
-      "disabled"
    },
    {
       "pce_cdimagecache",
