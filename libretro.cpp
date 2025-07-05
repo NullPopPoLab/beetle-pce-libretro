@@ -1095,7 +1095,7 @@ static void check_variables(bool loaded)
             if (strcmp(var.value, "2 Buttons") == 0)
                avpad6_enable[i] = 0;
             else if (strcmp(var.value, "6 Buttons") == 0)
-               avpad6_enable[i] = (1 << RETRO_DEVICE_ID_JOYPAD_L2);
+               avpad6_enable[i] = (1 << 12);
          }
       }
    }
