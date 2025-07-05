@@ -1496,7 +1496,7 @@ static void update_input(void)
 
    static int turbo_map[]     = { -1,-1,-1,-1,-1,-1,-1,-1, 1, 0,-1,-1,-1,-1,-1 };
    static int turbo_map_alt[] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1, 0 };
-   static unsigned map[] = {
+   static unsigned map[MAX_BUTTONS] = {
       RETRO_DEVICE_ID_JOYPAD_A, // I
       RETRO_DEVICE_ID_JOYPAD_B, // II
       RETRO_DEVICE_ID_JOYPAD_SELECT, // SELECT
@@ -1509,9 +1509,9 @@ static void update_input(void)
       RETRO_DEVICE_ID_JOYPAD_Z, // IV 
       RETRO_DEVICE_ID_JOYPAD_Y, // V
       RETRO_DEVICE_ID_JOYPAD_X, // VI 
-      RETRO_DEVICE_ID_JOYPAD_MENU, // mode 
-      RETRO_DEVICE_ID_JOYPAD_L3,
-      RETRO_DEVICE_ID_JOYPAD_R3
+      RETRO_DEVICE_ID_JOYPAD_MENU, // AvenuePad6 enablity 
+      RETRO_DEVICE_ID_JOYPAD_L3, // dummy? 
+      RETRO_DEVICE_ID_JOYPAD_R3, // dummy? 
    };
 
    for (j = 0; j < MAX_PLAYERS; j++)
@@ -1523,15 +1523,33 @@ static void update_input(void)
          for (i = 0; i < RETRO_DEVICE_ID_JOYPAD_BUTTON_MAX; i++)
             joy_bits[j] |= input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, i) ? (1 << i) : 0;
       }
-   }
 
-   for (j = 0; j < MAX_PLAYERS; j++)
-   {
       if (input_type[j] == RETRO_DEVICE_JOYPAD)             // Joypad
       {
          uint16_t input_state = 0;
 
-         for (i = 0; i < MAX_BUTTONS; i++)
+         if(joy_bits[j] & (1<<RETRO_DEVICE_ID_JOYPAD_MENU))
+         {
+            if (avpad6_toggle_down[j] == 0)
+            {
+               avpad6_toggle_down[j] = 1;
+               avpad6_enable[j] ^= (1 << 12);
+
+               MDFN_DispMessage("Pad %i %s", j + 1, avpad6_enable[j] ? "6-buttons" : "2-buttons" );
+
+               int mode = !avpad6_enable[j] && (Turbo_Toggling == 2);
+               for(int lcv = 0; lcv < MAX_PLAYERS; lcv++)
+               {
+                  turbo_enable[lcv][8] = mode;
+                  turbo_enable[lcv][9] = mode;
+               }
+            }
+         }
+         else
+            avpad6_toggle_down[j] = 0;
+         input_state |= avpad6_enable[j];
+
+         for (i = 0; i < 12; i++)
          {
             if (turbo_enable[j][i] == 1) //Check whether a given button is turbo-capable
             {
@@ -1562,30 +1580,6 @@ static void update_input(void)
                }
                else
                   turbo_toggle_down[j][i] = 0;
-            }
-            else if(i == 12)
-            {
-               if(input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, map[i]))
-               {
-                  if (avpad6_toggle_down[j] == 0)
-                  {
-                     avpad6_toggle_down[j] = 1;
-                     avpad6_enable[j] ^= (1 << 12);
-
-                     MDFN_DispMessage("Pad %i %s", j + 1, avpad6_enable[j] ? "6-buttons" : "2-buttons" );
-
-                     int mode = !avpad6_enable[j] && (Turbo_Toggling == 2);
-                     for(int lcv = 0; lcv < MAX_PLAYERS; lcv++)
-                     {
-                        turbo_enable[lcv][8] = mode;
-                        turbo_enable[lcv][9] = mode;
-                     }
-                  }
-               }
-               else
-                  avpad6_toggle_down[j] = 0;
-
-               input_state |= avpad6_enable[j];
             }
             else
                input_state |= (joy_bits[j] & (1 << map[i])) ? (1 << i) : 0;
