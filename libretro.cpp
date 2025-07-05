@@ -1563,14 +1563,14 @@ static void update_input(void)
                else
                   turbo_toggle_down[j][i] = 0;
             }
-            else if(i == RETRO_DEVICE_ID_JOYPAD_L2)
+            else if(i == 12)
             {
                if(input_state_cb(j, RETRO_DEVICE_JOYPAD, 0, map[i]))
                {
                   if (avpad6_toggle_down[j] == 0)
                   {
                      avpad6_toggle_down[j] = 1;
-                     avpad6_enable[j] ^= (1 << RETRO_DEVICE_ID_JOYPAD_L2);
+                     avpad6_enable[j] ^= (1 << 12);
 
                      MDFN_DispMessage("Pad %i %s", j + 1, avpad6_enable[j] ? "6-buttons" : "2-buttons" );
 
